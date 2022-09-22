@@ -13,7 +13,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Novena- Health Care &amp; Medical template</title>
+  <title>NE PHARMACY </title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
