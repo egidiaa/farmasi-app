@@ -98,7 +98,7 @@
 					
 					<p class="mb-4 pr-5">Sebuah layanan alternatif yang akan membantu anda dalam membeli obat secara instan dan sesuai dengan kebutuhan anda. Terdapat layanan konsultasi dengan dokter ahli untuk keluhan anda .</p>
 					<div class="btn-container ">
-						<a href="appoinment.html" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">DAFTAR SEKARANG!!<i class="icofont-simple-right ml-2  "></i></a>
+						<a href="/login" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">DAFTAR SEKARANG!!<i class="icofont-simple-right ml-2  "></i></a>
 					</div>
 				</div>
 			</div>
