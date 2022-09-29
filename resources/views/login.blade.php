@@ -33,11 +33,7 @@
             <div class="col-md-8">
               <div class="mb-4">
               <h3>Sign In</h3>
-<<<<<<< HEAD
               <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
-=======
-              <p class="mb-4">Masukkan Username dan Password.</p>
->>>>>>> cc4ad6cf41a71bee4909a4e337a3472bb920ea0b
             </div>
             <form action="#" method="post">
               <div class="form-group first">
