@@ -22,7 +22,7 @@ Route::get('/Tentang Kami', function () {
 });
 
 
-Route::get('/daftar-sekarang', function () {
+Route::get('/DAFTAR SEKARANG!!', function () {
     return view('/login');
 });
 
