@@ -61,3 +61,7 @@ Route::get('/doctor', function () {
 Route::get('/sevice', function () {
     return view('/service');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
