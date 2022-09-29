@@ -17,12 +17,13 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/about', function () {
+Route::get('/Tentang Kami', function () {
     return view('/about');
 });
 
-Route::get('/appoinment', function () {
-    return view('/appoinment');
+
+Route::get('/daftar-sekarang', function () {
+    return view('/login');
 });
 
 Route::get('/blog-sidebar', function () {

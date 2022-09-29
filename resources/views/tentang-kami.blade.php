@@ -47,13 +47,16 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<ul class="top-bar-info list-inline-item pl-0 mb-0">
-						<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>Kelompok 14 B2</a></li>
-						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Surabaya, Indonesia</li>
+						<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>support@novena.com</a></li>
+						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Address Ta-134/A, New York, USA </li>
 					</ul>
 				</div>
 				<div class="col-lg-6">
 					<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-			
+						<a href="tel:+23-345-67890">
+							<span>Call Now : </span>
+							<span class="h4">823-4565-13456</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -75,36 +78,9 @@
 					<li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
 					<li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
 					<li class="nav-item"><a class="nav-link" href="service.html">Konsultasi</a></li>
-					<li class="nav-item"><a class="nav-link" href="service.html"></a>Kontak Kami</li>
 
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">Doctors <i class="icofont-thin-down"></i></a>
-						<ul class="dropdown-menu" aria-labelledby="dropdown03">
-							<li><a class="dropdown-item" href="doctor.html">Doctors</a></li>
-							<li><a class="dropdown-item" href="doctor-single.html">Doctor Single</a></li>
-							<li><a class="dropdown-item" href="appoinment.html">Appoinment</a></li>
-
-							<li class="dropdown dropdown-submenu dropleft">
-								<a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-			
-								<ul class="dropdown-menu" aria-labelledby="dropdown0501">
-									<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-									<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="blog-sidebar.html" id="dropdown05" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">Blog <i class="icofont-thin-down"></i></a>
-						<ul class="dropdown-menu" aria-labelledby="dropdown05">
-							<li><a class="dropdown-item" href="blog-sidebar.html">Blog with Sidebar</a></li>
-							<li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-						</ul>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="contact.html">Kontak Kami</a></li>
 				</ul>
 			</div>
 		</div>
@@ -117,13 +93,13 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block text-center">
-          <span class="text-white">Our services</span>
-          <h1 class="text-capitalize mb-5 text-lg">What We Do</h1>
+          <span class="text-white">Tentang Kami</span>
+          <h1 class="text-capitalize mb-5 text-lg">Tentang Kami</h1>
 
           <!-- <ul class="list-inline breadcumb-nav">
             <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">Our services</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">About Us</a></li>
           </ul> -->
         </div>
       </div>
@@ -131,86 +107,100 @@
   </div>
 </section>
 
-
-<section class="section service-2">
+<section class="section about-page">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-block mb-5">
-					<img src="images/service/service-1.jpg" alt="" class="img-fluid">
-					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">Child care</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-					</div>
-				</div>
+			<div class="col-lg-4">
+				<h2 class="title-color">Solusi Cepat Pembelian Obat Anda!</h2>
 			</div>
+			<div class="col-lg-8">
+				<p>Sebuah layanan alternatif yang akan membantu anda dalam membeli obat secara instan dan sesuai dengan kebutuhan anda. Terdapat layanan konsultasi dengan dokter ahli untuk keluhan anda.</p>
+				<img src="images/about/sign.png" alt="" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</section>
 
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-block mb-5">
-					<img src="images/service/service-2.jpg" alt="" class="img-fluid">
-					<div class="content">
-						<h4 class="mt-4 mb-2  title-color">Personal Care</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-					</div>
+<section class="fetaure-page ">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="about-block-item mb-5 mb-lg-0">
+					<img src="images/about/about-1.jpg" alt="" class="img-fluid w-100">
+					<h4 class="mt-3">Konsultasi</h4>
+					<p>Konsultasikan kepada Dokter terkait gejala-gejala yang anda rasakan.</p>
 				</div>
 			</div>
-			
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-block mb-5">
-					<img src="images/service/service-3.jpg" alt="" class="img-fluid">
-					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">CT scan</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-					</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="about-block-item mb-5 mb-lg-0">
+					<img src="images/about/about-2.jpg" alt="" class="img-fluid w-100">
+					<h4 class="mt-3">Vitamin dan Antibiotik</h4>
+					<p>Kuatkan stamina anda dan perketat daya tahan tubuh.</p>
 				</div>
 			</div>
-
-
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-block mb-5 mb-lg-0">
-					<img src="images/service/service-4.jpg" alt="" class="img-fluid">
-					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">Joint replacement</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-					</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="about-block-item mb-5 mb-lg-0">
+					<img src="images/about/about-3.jpg" alt="" class="img-fluid w-100">
+					<h4 class="mt-3">Perawatan Luka</h4>
+					<p>Rawat Luka anda dengan segera agar tidak terinfeksi.</p>
 				</div>
 			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-block mb-5 mb-lg-0">
-					<img src="images/service/service-6.jpg" alt="" class="img-fluid">
-					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">Examination & Diagnosis</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-					</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="about-block-item">
+					<img src="images/about/about-4.jpg" alt="" class="img-fluid w-100">
+					<h4 class="mt-3">Obat General</h4>
+					<p>Temukan Obat untuk sakit yang anda rasakan.</p>
 				</div>
 			</div>
-			
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-block mb-5 mb-lg-0">
-					<img src="images/service/service-8.jpg" alt="" class="img-fluid">
-					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">Alzheimer's disease</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+		</div>
+	</div>
+</section>
+<section class="section awards">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-4">
+				<h2 class="title-color">Our Doctors achievements </h2>
+				<div class="divider mt-4 mb-5 mb-lg-0"></div>
+			</div>
+			<div class="col-lg-8">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img">
+							<img src="images/about/3.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img">
+							<img src="images/about/4.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img">
+							<img src="images/about/1.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img">
+							<img src="images/about/2.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img">
+							<img src="images/about/5.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="award-img">
+							<img src="images/about/6.png" alt="" class="img-fluid">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="section cta-page">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7">
-				<div class="cta-content">
-					<div class="divider mb-4"></div>
-					<h2 class="mb-5 text-lg">We are pleased to offer you the <span class="title-color">chance to have the healthy</span></h2>
-					<a href="appoinment.html" class="btn btn-main-2 btn-round-full">Get appoinment<i class="icofont-simple-right  ml-2"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
+
 
 <!-- footer Start -->
 <footer class="footer section gray-bg">
@@ -223,46 +213,22 @@
 					</div>
 					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
 
-					<ul class="list-inline footer-socials mt-4">
-						<li class="list-inline-item">
-							<a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="https://twitter.com/themefisher"><i class="icofont-twitter"></i></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="https://www.pinterest.com/themefisher/"><i class="icofont-linkedin"></i></a>
-						</li>
-					</ul>
+					
 				</div>
 			</div>
 
 			<div class="col-lg-2 col-md-6 col-sm-6">
 				<div class="widget mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3">Department</h4>
+					<h4 class="text-capitalize mb-3">Pelayanan Kami</h4>
 					<div class="divider mb-4"></div>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#!">Surgery </a></li>
-						<li><a href="#!">Wome's Health</a></li>
-						<li><a href="#!">Radiology</a></li>
-						<li><a href="#!">Cardioc</a></li>
-						<li><a href="#!">Medicine</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-lg-2 col-md-6 col-sm-6">
-				<div class="widget mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3">Support</h4>
-					<div class="divider mb-4"></div>
-
-					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#!">Terms & Conditions</a></li>
-						<li><a href="#!">Privacy Policy</a></li>
-						<li><a href="#!">Company Support </a></li>
-						<li><a href="#!">FAQuestions</a></li>
-						<li><a href="#!">Company Licence</a></li>
+						<li><a href="#!">Konsultasi </a></li>
+						<li><a href="#!">Vitamin dan Antibiotik</a></li>
+						<li><a href="#!">Perawatan Luka</a></li>
+						<li><a href="#!">obat General</a></li>
+						<li><a href="#!">Obat Khusus</a></li>
+						<li><a href="#!">Skincare</a></li>
 					</ul>
 				</div>
 			</div>
