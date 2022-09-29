@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
 
 <html lang="en">
 <head>
@@ -98,7 +92,7 @@
 					
 					<p class="mb-4 pr-5">Sebuah layanan alternatif yang akan membantu anda dalam membeli obat secara instan dan sesuai dengan kebutuhan anda. Terdapat layanan konsultasi dengan dokter ahli untuk keluhan anda .</p>
 					<div class="btn-container ">
-						<a href="appoinment.html" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">DAFTAR SEKARANG!!<i class="icofont-simple-right ml-2  "></i></a>
+						<a href="/login" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">DAFTAR SEKARANG!!<i class="icofont-simple-right ml-2  "></i></a>
 					</div>
 				</div>
 			</div>
@@ -251,60 +245,6 @@
 						<p class="mb-4">Rawat diri anda dengan sepenuh hati.</p>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section appoinment">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6 ">
-				<div class="appoinment-content">
-					<img src="images/about/img-3.jpg" alt="" class="img-fluid">
-					<div class="emergency">
-						<h2 class="text-lg"><i class="icofont-phone-circle text-lg"></i>+23 345 67980</h2>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-10 ">
-				<div class="appoinment-wrap mt-5 mt-lg-0">
-					<h2 class="mb-2 title-color">Layanan Konsultasi</h2>
-					<p class="mb-4">Konsultasikan kesehatan anda sekarang juga dibawah ini.</p>
-					     <form id="#" class="appoinment-form" method="post" action="#">
-                    <div class="row">
-                        
-                     
-
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="time" id="time" type="text" class="form-control" placeholder="Jam">
-                            </div>
-                        </div>
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="name" id="name" type="text" class="form-control" placeholder="Nama Lengkap">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="phone" id="phone" type="Number" class="form-control" placeholder="No Telepon">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group-2 mb-4">
-                        <textarea name="message" id="message" class="form-control" rows="6" placeholder="Pesan"></textarea>
-                    </div>
-
-                    <a class="btn btn-main btn-round-full" href="appoinment.html" >Kirim <i class="icofont-simple-right ml-2  "></i></a>
-                </form>
-            </div>
 			</div>
 		</div>
 	</div>
