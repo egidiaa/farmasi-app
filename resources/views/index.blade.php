@@ -55,7 +55,7 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navigation" id="navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="index.h">
 				<img src="asset/logo.png" alt="" class="img-fluid">
 			</a>
 			<h4 class="mb-3">NE PHARMACY</h4>
@@ -68,11 +68,12 @@
 			<div class="collapse navbar-collapse" id="navbarmain">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
-					<li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
-					<li class="nav-item"><a class="nav-link" href="service.html">Konsultasi</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">Tentang Kami</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="/service">Konsultasi</a></li>
 
 					
-					<li class="nav-item"><a class="nav-link" href="contact.html">Kontak Kami</a></li>
+					<li class="nav-item"><a class="nav-link" href="/contact">Kontak Kami</a></li>
 				</ul>
 			</div>
 		</div>
@@ -92,7 +93,7 @@
 					
 					<p class="mb-4 pr-5">Sebuah layanan alternatif yang akan membantu anda dalam membeli obat secara instan dan sesuai dengan kebutuhan anda. Terdapat layanan konsultasi dengan dokter ahli untuk keluhan anda .</p>
 					<div class="btn-container ">
-						<a href="/login" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">DAFTAR SEKARANG!!<i class="icofont-simple-right ml-2  "></i></a>
+						<a href="/login" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">MASUK SEKARANG!<i class="icofont-simple-right ml-2  "></i></a>
 					</div>
 				</div>
 			</div>
@@ -152,7 +153,7 @@
 					<h2 class="title-color"> Untuk kesehatan & <br> Kenyamanan anda</h2>
 					<p class="mt-4 mb-5"> Kami siap melayani anda <br> Dapatkan informasi kesehatan, konsultasi dengan dokter, belanja vitamin & obat. #JagaSehatmu.</p>
 
-					<a href="service.html" class="btn btn-main-2 btn-round-full btn-icon">Konsultasikan sekarang juga!<i class="icofont-simple-right ml-3"></i></a>
+					<a href="/service" class="btn btn-main-2 btn-round-full btn-icon">Konsultasikan sekarang juga!<i class="icofont-simple-right ml-3"></i></a>
 				</div>
 			</div>
 		</div>

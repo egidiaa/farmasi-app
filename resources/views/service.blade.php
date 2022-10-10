@@ -84,15 +84,6 @@
 							<li><a class="dropdown-item" href="doctor.html">Doctors</a></li>
 							<li><a class="dropdown-item" href="doctor-single.html">Doctor Single</a></li>
 							<li><a class="dropdown-item" href="appoinment.html">Appoinment</a></li>
-
-							<li class="dropdown dropdown-submenu dropleft">
-								<a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-			
-								<ul class="dropdown-menu" aria-labelledby="dropdown0501">
-									<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-									<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-								</ul>
-							</li>
 						</ul>
 					</li>
 

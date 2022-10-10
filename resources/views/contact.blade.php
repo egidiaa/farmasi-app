@@ -47,17 +47,9 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<ul class="top-bar-info list-inline-item pl-0 mb-0">
-						<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>support@novena.com</a></li>
-						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Address Ta-134/A, New York, USA </li>
+						<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>Kelompok 14 B2</a></li>
+						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Surabaya, Indonesia </li>
 					</ul>
-				</div>
-				<div class="col-lg-6">
-					<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-						<a href="tel:+23-345-67890">
-							<span>Call Now : </span>
-							<span class="h4">823-4565-13456</span>
-						</a>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -72,59 +64,15 @@
 				aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="icofont-navigation-menu"></span>
 			</button>
-
 			<div class="collapse navbar-collapse" id="navbarmain">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+					<li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">Tentang Kami</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="/service">Konsultasi</a></li>
 
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">Department <i class="icofont-thin-down"></i></a>
-						<ul class="dropdown-menu" aria-labelledby="dropdown02">
-							<li><a class="dropdown-item" href="department.html">Departments</a></li>
-							<li><a class="dropdown-item" href="department-single.html">Department Single</a></li>
-                    
-							<li class="dropdown dropdown-submenu dropright">
-								<a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-			
-								<ul class="dropdown-menu" aria-labelledby="dropdown0301">
-									<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-									<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">Doctors <i class="icofont-thin-down"></i></a>
-						<ul class="dropdown-menu" aria-labelledby="dropdown03">
-							<li><a class="dropdown-item" href="doctor.html">Doctors</a></li>
-							<li><a class="dropdown-item" href="doctor-single.html">Doctor Single</a></li>
-							<li><a class="dropdown-item" href="appoinment.html">Appoinment</a></li>
-
-							<li class="dropdown dropdown-submenu dropleft">
-								<a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-			
-								<ul class="dropdown-menu" aria-labelledby="dropdown0501">
-									<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-									<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="blog-sidebar.html" id="dropdown05" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">Blog <i class="icofont-thin-down"></i></a>
-						<ul class="dropdown-menu" aria-labelledby="dropdown05">
-							<li><a class="dropdown-item" href="blog-sidebar.html">Blog with Sidebar</a></li>
-							<li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-						</ul>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="/contact">Kontak Kami</a></li>
 				</ul>
 			</div>
 		</div>
@@ -137,8 +85,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block text-center">
-          <span class="text-white">Contact Us</span>
-          <h1 class="text-capitalize mb-5 text-lg">Get in Touch</h1>
+          <span class="text-white">Kontak Kami</span>
+          <h1 class="text-capitalize mb-5 text-lg">Panggil kami sekarang juga</h1>
 
           <!-- <ul class="list-inline breadcumb-nav">
             <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
@@ -158,22 +106,15 @@
       <div class="col-lg-4 col-md-6">
         <div class="contact-block mb-4 mb-lg-0">
           <i class="icofont-live-support"></i>
-          <h5>Call Us</h5>
+          <h5>Panggil Kami</h5>
           +823-4565-13456
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="contact-block mb-4 mb-lg-0">
           <i class="icofont-support-faq"></i>
-          <h5>Email Us</h5>
-          contact@mail.com
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <div class="contact-block mb-4 mb-lg-0">
-          <i class="icofont-location-pin"></i>
-          <h5>Location</h5>
-          North Main Street,Brooklyn Australia
+          <h5>Email Kami</h5>
+          kontakkami@gmail.com
         </div>
       </div>
     </div>
@@ -185,10 +126,9 @@
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="section-title text-center">
-          <h2 class="text-md mb-2">Contact us</h2>
+          <h2 class="text-md mb-2">Kontak Kami</h2>
           <div class="divider mx-auto my-4"></div>
-          <p class="mb-5">Laboriosam exercitationem molestias beatae eos pariatur, similique, excepturi mollitia sit
-            perferendis maiores ratione aliquam?</p>
+          <p class="mb-5">Melayani dengan Cepat dan Mudah</p>
         </div>
       </div>
     </div>
@@ -207,33 +147,33 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="form-group">
-                <input name="name" id="name" type="text" class="form-control" placeholder="Your Full Name">
+                <input name="name" id="name" type="text" class="form-control" placeholder="Nama Panjang ">
               </div>
             </div>
 
             <div class="col-lg-6">
               <div class="form-group">
-                <input name="email" id="email" type="email" class="form-control" placeholder="Your Email Address" required>
+                <input name="email" id="email" type="email" class="form-control" placeholder="Email" required>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <input name="subject" id="subject" type="text" class="form-control" placeholder="Your Query Topic" required>
+                <input name="subject" id="subject" type="text" class="form-control" placeholder="Topik Permintaan" required>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <input name="phone" id="phone" type="text" class="form-control" placeholder="Your Phone Number" required>
+                <input name="phone" id="phone" type="text" class="form-control" placeholder="Nomor Telepon" required>
               </div>
             </div>
           </div>
 
           <div class="form-group-2 mb-4">
-            <textarea name="message" id="message" class="form-control" rows="8" placeholder="Your Message" required></textarea>
+            <textarea name="message" id="message" class="form-control" rows="8" placeholder="Pesan Anda" required></textarea>
           </div>
 
           <div>
-            <input class="btn btn-main btn-round-full" name="submit" type="submit" value="Send Messege"></input>
+            <input class="btn btn-main btn-round-full" name="submit" type="submit" value="Kirim Pesan"></input>
           </div>
         </form>
       </div>
@@ -243,7 +183,7 @@
 
 
 <div class="google-map ">
-	<div id="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.png"></div>
+	<div id="map" data-latitude="-7.2756195" data-longitude="112.7126837" data-marker="images/marker.png"></div>
 </div>
 
 <!-- footer Start -->
@@ -255,7 +195,7 @@
 					<div class="logo mb-4">
 						<img src="images/logo.png" alt="" class="img-fluid">
 					</div>
-					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
+					<p>Selangkah Lebih dekat dengan kami, Hubungi Kontak Kami Setiap Anda membutuhkannya. Terima kasih</p>
 
 					<ul class="list-inline footer-socials mt-4">
 						<li class="list-inline-item">

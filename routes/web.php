@@ -17,13 +17,13 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/Tentang Kami', function () {
+Route::get('/about', function () {
     return view('/about');
 });
 
 
-Route::get('/DAFTAR SEKARANG!!', function () {
-    return view('/login');
+Route::get('appoinment', function () {
+    return view('/appoinment');
 });
 
 Route::get('/blog-sidebar', function () {
@@ -64,4 +64,16 @@ Route::get('/sevice', function () {
 
 Route::get('/login', function () {
     return view('login');
+});
+
+    Route::get('/register', function () {
+        return view('register');
+});
+
+Route::get('/forgot-password', function () {
+    return view('forgot password ?');
+});
+
+Route::get('/index-admin', function () {
+    return view('Log In');
 });
