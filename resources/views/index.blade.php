@@ -1,284 +1,292 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
+
 <head>
-
-  <!-- Basic Page Needs
-  ================================================== -->
+  <title>NE Pharmacy</title>
   <meta charset="utf-8">
-  <title>NE PHARMACY </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Mobile Specific Metas
-  ================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Health Care Medical Html5 Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Novena HTML Template v1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="asset/logo.png" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-  <!-- 
-  Essential stylesheets
-  =====================================-->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
 
-  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/aos.css">
+
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body id="top">
+<body>
 
-<header>
-	<div class="header-top-bar">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<ul class="top-bar-info list-inline-item pl-0 mb-0">
-						<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>Kelompok 14 B2</a></li>
-						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Surabaya, Indonesia</li>
-					</ul>
-				</div>
-				<div class="col-lg-6">
-					<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<nav class="navbar navbar-expand-lg navigation" id="navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.h">
-				<img src="asset/logo.png" alt="" class="img-fluid">
-			</a>
-			<h4 class="mb-3">NE PHARMACY</h4>
-
-			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
-				aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="icofont-navigation-menu"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarmain">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
-					<li class="nav-item"><a class="nav-link" href="/about">Tentang Kami</a></li>
-					
-					<li class="nav-item"><a class="nav-link" href="/service">Konsultasi</a></li>
-
-					
-					<li class="nav-item"><a class="nav-link" href="/contact">Kontak Kami</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-</header>
+  <div class="site-wrap">
+  <div class="site-wrap">
 
 
-<!-- Slider Start -->
-<section class="banner">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-xl-7">
-				<div class="block">
-					<div class="divider mb-3"></div>
-					<span class="text-uppercase text-sm letter-spacing ">Solusi Cepat Pembelian Obat Anda!</span>
-					<h1 class="mb-3 mt-3">Sistem Informasi Pelayanan Farmasi</h1>
-					
-					<p class="mb-4 pr-5">Sebuah layanan alternatif yang akan membantu anda dalam membeli obat secara instan dan sesuai dengan kebutuhan anda. Terdapat layanan konsultasi dengan dokter ahli untuk keluhan anda .</p>
-					<div class="btn-container ">
-						<a href="/login" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">MASUK SEKARANG!<i class="icofont-simple-right ml-2  "></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="features">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="feature-block d-lg-flex">
+    <div class="site-navbar py-2">
 
-				
-					<div class="feature-item mb-5 mb-lg-0">
-						<div class="feature-icon mb-4">
-							<i class="icofont-ui-clock"></i>
-						</div>
-						
-						<h4 class="mb-3">Jam Kerja</h4>
-						<ul class="w-hours list-unstyled">
-							<li class="d-flex justify-content-between">Senin - Rabu : <span>8:00 - 17:00</span></li>
-							<li class="d-flex justify-content-between">Kamis - jumat : <span>9:00 - 17:00</span></li>
-							<li class="d-flex justify-content-between">Sabtu - Minggu : <span>10:00 - 17:00</span></li>
-						</ul>
-					</div>
-				
-					<div class="feature-item mb-5 mb-lg-0">
-						<div class="feature-icon mb-4">
-							<i class="icofont-support"></i>
-						</div>
-						<span>Nomor Kontak</span>
-						<h4 class="mb-3">1-800-700-6200</h4>
-						<p>Kontak yang dapat dihubungi dalam keadaan darurat .</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+      <div class="search-wrap">
+        <div class="container">
+          <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+          <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+          </form>
+        </div>
+      </div>
 
-<section class="section about">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-4 col-sm-6">
-				<div class="about-img">
-					<img src="asset/foto1.jfif" alt="" class="img-fluid">
-					<img src="asset/foto2.jfif" alt="" class="img-fluid mt-4">
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="about-img mt-4 mt-lg-0">
-					<img src="asset/foto3.jpg" alt="" class="img-fluid">
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="about-content pl-4 mt-4 mt-lg-0">
-					<h2 class="title-color"> Untuk kesehatan & <br> Kenyamanan anda</h2>
-					<p class="mt-4 mb-5"> Kami siap melayani anda <br> Dapatkan informasi kesehatan, konsultasi dengan dokter, belanja vitamin & obat. #JagaSehatmu.</p>
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <div class="site-logo">
+              <a href="/index" class="js-logo-clone"><strong class="text-primary">Farmasi</a>
+            </div>
+          </div>
+          <div class="main-nav d-none d-lg-block">
+            <nav class="site-navigation text-right text-md-center" role="navigation">
+              <ul class="site-menu js-clone-nav d-none d-lg-block">
+                <li class="active"><a href="/index">Beranda</a></li>
+                <li><a href="/shop">Toko</a></li>
+                <li class="has-children">
+                  <a href="/shop">Produk</a>
+                  <ul class="dropdown">
+                    <li><a href="/shop">Suplemen</a></li>
+                    <li class="has-children">
+                      <a href="/shop">Vitamin</a>
+                      <ul class="dropdown">
+                        <li><a href="/shop">Suplemen</a></li>
+                        <li><a href="/shop">Vitamin</a></li>
+                        <li><a href="/shop">Diet &amp; Nutrisi</a></li>
+                        <li><a href="/shop">Teh &amp; Kopi</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="/shop">Diet &amp; Nutrisi</a></li>
+                    <li><a href="/shop">Teh &amp; Kopi</a></li>
+                    
+                  </ul>
+                </li>
+                <li><a href="/about">Tentang Kami</a></li>
+                <li><a href="/contact">Kontak Kami</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="icons">
+            <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
+            <a href="/cart" class="icons-btn d-inline-block bag">
+              <span class="icon-shopping-bag"></span>
+              <span class="number" >2</span>
+            </a>
+            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+                class="icon-menu"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 
-					<a href="/service" class="btn btn-main-2 btn-round-full btn-icon">Konsultasikan sekarang juga!<i class="icofont-simple-right ml-3"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+    <div class="owl-carousel owl-single px-0">
+      <div class="site-blocks-cover overlay" style="background-image: url('asset/pharma.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto align-self-center">
+              <div class="site-block-cover-content text-center">
+                <h1 class="mb-0"><strong class="text-primary">Layanan Farmasi</strong> Buka 24 Jam</h1>
 
-<section class="section service gray-bg">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-7 text-center">
-				<div class="section-title">
-					<h2>Pelayanan Kami</h2>
-					<div class="divider mx-auto my-4"></div>
-					<p>Cari Tahu apa yang Anda butuhkan di bawah ini.</p>
-				</div>
-			</div>
-		</div>
+                <div class="row justify-content-center mb-5">
+                  <div class="col-lg-6 text-center">
+                    <p>Siap Melayani Kebutuhan Obat Anda</p>.
+                  </div>
+                </div>
+                
+                <p><a href="/formlogin" class="btn btn-primary px-5 py-3">Belanja Sekarang Juga</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-item mb-4">
-					<div class="icon d-flex align-items-center">
-						<i class="fa-thin fa-stethoscope"></i>
-						<h4 class="mt-3 mb-3">Konsultasi</h4>
-					</div>
+      <div class="site-blocks-cover overlay" style="background-image: url('asset/hero_bg_2.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto align-self-center">
+              <div class="site-block-cover-content text-center">
+                <h1 class="mb-0">Obat Baru <strong class="text-primary">Setiap Hari</strong></h1>
+                <div class="row justify-content-center mb-5">
+                  <div class="col-lg-6 text-center">
+                    <p>Temukan Obat yang Anda butuhkan disini sekarang juga.</p>
+                  </div>
+                </div>
+                <p><a href="/formlogin" class="btn btn-primary px-5 py-3">Belanja Sekarang Juga</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-					<div class="content">
-						<p class="mb-4">Konsultasikan kepada Dokter terkait gejala-gejala yang anda rasakan.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-item mb-4">
-					<div class="icon d-flex align-items-center">
-						<i class="icofont-heart-beat-alt text-lg"></i>
-						<h4 class="mt-3 mb-3">Vitamin dan Antibiotik</h4>
-					</div>
-					<div class="content">
-						<p class="mb-4"> Kuatkan stamina anda dan perketat daya tahan tubuh.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-item mb-4">
-					<div class="icon d-flex align-items-center">
-						<i class="icofont-tooth text-lg"></i>
-						<h4 class="mt-3 mb-3">Perawatan Luka</h4>
-					</div>
-					<div class="content">
-						<p class="mb-4">Rawat Luka anda dengan segera agar tidak terinfeksi.</p>
-					</div>
-				</div>
-			</div>
+    </div>
 
 
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-item mb-4">
-					<div class="icon d-flex align-items-center">
-						<i class="icofont-crutch text-lg"></i>
-						<h4 class="mt-3 mb-3">Obat General</h4>
-					</div>
 
-					<div class="content">
-						<p class="mb-4">Temukan Obat untuk sakit yang anda rasakan.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-item mb-4">
-					<div class="icon d-flex align-items-center">
-						<i class="icofont-brain-alt text-lg"></i>
-						<h4 class="mt-3 mb-3">Obat Khusus</h4>
-					</div>
-					<div class="content">
-						<p class="mb-4">Temukan obat khusus untuk sakit yang anda rasakan.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="service-item mb-4">
-					<div class="icon d-flex align-items-center">
-						<i class="icofont-dna-alt-1 text-lg"></i>
-						<h4 class="mt-3 mb-3">Skincare</h4>
-					</div>
-					<div class="content">
-						<p class="mb-4">Rawat diri anda dengan sepenuh hati.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section testimonial-2 gray-bg">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-7">
-				<div class="section-title text-center">
-					<h2>NE PHARMACY</h2>
-					<div class="divider mx-auto my-4"></div>
-					<p>Kami siap melayani kesehatan anda dengan sekali klik, apapun masalah kesehatan anda dapat dikosultasikan kepada Dokter di Apotek kami.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-   
-
-    <!-- 
-    Essential Scripts
-    =====================================-->
-    <script src="plugins/jquery/jquery.js"></script>
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
-    <script src="plugins/shuffle/shuffle.min.js"></script>
-
-    <!-- Google Map -->
-    <script src="https://goo.gl/maps/QF7n8DaYHEcQiwQ37"></script>
-    <script src="plugins/google-map/gmap.js"></script>
+    <div class="site-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="feature">
+              <span class="wrap-icon flaticon-medicine"></span>
+              <h3><a href="#">Obat Baru Setiap Hari</a></h3>
+              <p>Temukan Obat yang Anda butuhkan disini sekarang juga.</p>
+              <p><a href="#" class="d-flex align-items-center"><span class="mr-2">Selengkapnya</span> <span class="icon-keyboard_arrow_right"></span></a></p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature">
+              <span class="wrap-icon flaticon-test-tubes"></span>
+              <h3><a href="#">Obat Dijamin</a></h3>
+              <p>Pembelian Obat yang dijamin kualitasnya.</p>
+              <p><a href="#" class="d-flex align-items-center"><span class="mr-2">Selengkapnya</span> <span class="icon-keyboard_arrow_right"></span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
-    <script src="js/script.js"></script>
+    
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="title-section text-center col-12">
+            <h2>Farmasi <strong class="text-primary">Produk</strong></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 block-3 products-wrap">
+            <div class="nonloop-block-3 owl-carousel">
 
-  </body>
-  </html>
+              <div class="text-center item mb-4 item-v2">
+                <span class="onsale">Sale</span>
+                <a href="/shop-single"> <img src="asset/product_03.png" alt="Image"></a>
+                <h3 class="text-dark"><a href="/shop-single">Umcka Cold Care</a></h3>
+                <p class="price">$120.00</p>
+              </div>
+
+              <div class="text-center item mb-4 item-v2">
+                <a href="/shop-single"> <img src="asset/product_01.png" alt="Image"></a>
+                <h3 class="text-dark"><a href="/shop-single">Umcka Cold Care</a></h3>
+                <p class="price">$120.00</p>
+              </div>
+
+              <div class="text-center item mb-4 item-v2">
+                <span class="onsale">Sale</span>
+                <a href="/shop-single"> <img src="asset/product_02.png" alt="Image"></a>
+                <h3 class="text-dark"><a href="/shop-single">Umcka Cold Care</a></h3>
+                <p class="price">$120.00</p>
+              </div>
+
+              <div class="text-center item mb-4 item-v2">
+                <a href="/shop-single"> <img src="asset/product_04.png" alt="Image"></a>
+                <h3 class="text-dark"><a href="/shop-single">Umcka Cold Care</a></h3>
+                <p class="price">$120.00</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-image overlay" style="background-image: url('asset/hero_bg_2.jpg');">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+         <div class="col-lg-7">
+           <h3 class="text-white">Sign Up untuk diskon 55%</h3>
+           <p class="text-white">Ayo Daftar sekarang juga untuk mendapatkan diskon sebesar 55% sekarang juga!</p>
+           <p class="mb-0"><a href="/formlogin" class="btn btn-outline-white">Sign up</a></p>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        
+        
+          <div class="col-lg-5">
+            <div class="title-section">
+              <h2 class="mb-5">Kenapa <strong class="text-primary">Harus Kami</strong></h2>
+              <div class="step-number d-flex mb-4">
+                <span>1</span>
+                <p>Pembelian obat dengan cepat dan mudah hanya dengan sekali klik.</p>
+              </div>
+
+              <div class="step-number d-flex mb-4">
+                <span>2</span>
+                <p>Menyediakan Obat baru setiap harinya dengan kualitas yang dapat dijamin.</p>
+              </div>
+
+              <div class="step-number d-flex mb-4">
+                <span>3</span>
+                <p>Terdapat banyak promo dan diskon untuk pelanggan baru dan juga pelanggan setia kami.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+
+            <div class="block-7">
+              <h3 class="footer-heading mb-4">Tentang Kami <strong class="text-primary"></strong></h3>
+              <p>Solusi Cepat, Mudah, dan Nyaman Untuk Kebutuhan Obat Anda.</p>
+            </div>
+
+          </div>
+          <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+            <h3 class="footer-heading mb-4">Navigasi</h3>
+            <ul class="list-unstyled">
+              <li><a href="/shop">Suplemen</a></li>
+              <li><a href="/shop">Vitamin</a></li>
+              <li><a href="/shop">Diet &amp; Nutrisi</a></li>
+              <li><a href="/shop">Teh &amp; Kopi</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4">Info Kontak</h3>
+              <ul class="list-unstyled">
+                <li class="address">Surabaya, Indonesia</li>
+                <li class="phone"><a href="tel://081234567890"></a>081234567890</li>
+                <li class="email">nepharmacy@domain.com</li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApotekController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,67 +14,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [ApotekController::class,'/']);
 
-Route::get('/about', function () {
-    return view('/about');
-});
+Route::get('/index', [ApotekController::class,'index']);
 
+Route::get('/about', [ApotekController::class,'about']);
 
-Route::get('appoinment', function () {
-    return view('/appoinment');
-});
+Route::get('/cart', [ApotekController::class,'cart']);
 
-Route::get('/blog-sidebar', function () {
-    return view('/blog-sidebar');
-});
+Route::get('/checkout', [ApotekController::class,'checkout']);
 
-Route::get('/blog-single', function () {
-    return view('/blog-single');
-});
+Route::get('/contact', [ApotekController::class,'contact']);
 
-Route::get('/confirmation', function () {
-    return view('/confirmation');
-});
+Route::get('/main', [ApotekController::class,'main']);
 
-Route::get('/contact', function () {
-    return view('/contact');
-});
+Route::get('/shop-single', [ApotekController::class,'shop-single']);
 
-Route::get('/department-single', function () {
-    return view('/department-single');
-});
+Route::get('/shop', [ApotekController::class,'shop']);
 
-Route::get('/department', function () {
-    return view('/department');
-});
+Route::get('/thankyou', [ApotekController::class,'thankyou']);
 
-Route::get('/doctor-single', function () {
-    return view('/doctor-single');
-});
+Route::get('/formlogin', [ApotekController::class,'formlogin']);
 
-Route::get('/doctor', function () {
-    return view('/doctor');
-});
+Route::get('/register', [ApotekController::class,'register']);
 
-Route::get('/sevice', function () {
-    return view('/service');
-});
-
-Route::get('/login', function () {
-    return view('login');
-});
-
-    Route::get('/register', function () {
-        return view('register');
-});
-
-Route::get('/forgot-password', function () {
-    return view('forgot password ?');
-});
-
-Route::get('/index-admin', function () {
-    return view('Log In');
+Route::get('/login', function(){
+    try{
+        \DB::connection()->getPdo();
+        echo 'Sudah terkoneksi dengan database:'. \DB::connection()->getDatabaseName();
+    } catch (\Exception $e){
+        echo 'Belum terkoneksi database, error:'.$e->getMessage();
+    }
 });
