@@ -1,82 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <title>register</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NE Pharmacy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="asset/logo.png">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/owl.carousel.css">
+    <link rel="stylesheet" href="css/css/owl.theme.css">
+    <link rel="stylesheet" href="css/css/owl.transitions.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/normalize.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/main.css">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/morrisjs/morris.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" href="css/css/metisMenu/metisMenu-vertical.css">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="css/css/calendar/fullcalendar.print.min.css">
+    <!-- forms CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/form/all-type-forms.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/css/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="js/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<div class="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="asset/pharma.jpg" alt="Image" class="img-fluid">
-        </div>
-        <div class="col-md-6 contents">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="mb-4">
-              <h3>Sign Up</h3>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="color-line"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="back-link back-backend">
+                    <a href="/index-admin" class="btn btn-primary">Kembali ke Dashboard</a>
+                </div>
             </div>
-            <form action="#" method="post">
-              <div class="form-group first">
-                <label for="username">Your Name</label>
-                <input type="text" class="form-control" id="username">
-
-                <div class="form-group first">
-                <label for="email">Your Email</label>
-                <input type="text" class="form-control" id="email">
-              </div>
-
-              <div class="form-group last mb-4">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
-                
-              </div>
-              <div class="form-group last mb-4">
-                <label for="password">Repeat Your Password</label>
-                <input type="password" class="form-control" id="password">
-                
-              </div>
-              
-              <div class="d-flex mb-5 align-items-center">
-                <label class="control control--checkbox mb-0"><span class="caption">I agree all statements in Terms of service</span>
-                  <input type="checkbox" checked="checked"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </div>
-
-              <a href="/shop" class="btn btn-block btn-primary">Register</a>
-            </form>
-            </div>
-          </div>
-          
         </div>
-        
-      </div>
     </div>
-  </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
+            <div class="col-md-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="text-center custom-login">
+                    <h3>Registration</h3>
+                    <p> </p>
+                </div>
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <form action="#" id="loginForm">
+                            <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label>Username</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Repeat Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Email Address</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Repeat Email Address</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="checkbox col-lg-12">
+                                    <input type="checkbox" class="i-checks" checked> Sigh up for now
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-success loginbtn">Register</button>
+                                <button class="btn btn-default">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
+        </div>
+    </div>
 
-  
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <!-- jquery
+		============================================ -->
+    <script src="js/js/vendor/jquery-1.11.3.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="js/js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="js/js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="js/js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="js/js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="js/js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="js/js/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="js/js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="js/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="js/js/metisMenu/metisMenu.min.js"></script>
+    <script src="js/js/metisMenu/metisMenu-active.js"></script>
+    <!-- tab JS
+		============================================ -->
+    <script src="js/js/tab.js"></script>
+    <!-- icheck JS
+		============================================ -->
+    <script src="js/js/icheck/icheck.min.js"></script>
+    <script src="js/js/icheck/icheck-active.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="js/js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="js/js/main.js"></script>
+</body>
+
 </html>

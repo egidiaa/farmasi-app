@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApotekController;
+use App\Http\Controllers\ApotekerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,31 +19,16 @@ Route::get('/', [ApotekController::class,'/']);
 
 Route::get('/index', [ApotekController::class,'index']);
 
+Route::get('/index-admin', [ApotekController::class,'indexa']);
+
 Route::get('/about', [ApotekController::class,'about']);
-
-Route::get('/cart', [ApotekController::class,'cart']);
-
-Route::get('/checkout', [ApotekController::class,'checkout']);
 
 Route::get('/contact', [ApotekController::class,'contact']);
 
 Route::get('/main', [ApotekController::class,'main']);
 
-Route::get('/shop-single', [ApotekController::class,'shop-single']);
-
-Route::get('/shop', [ApotekController::class,'shop']);
-
-Route::get('/thankyou', [ApotekController::class,'thankyou']);
-
-Route::get('/formlogin', [ApotekController::class,'formlogin']);
-
 Route::get('/register', [ApotekController::class,'register']);
 
-Route::get('/login', function(){
-    try{
-        \DB::connection()->getPdo();
-        echo 'Sudah terkoneksi dengan database:'. \DB::connection()->getDatabaseName();
-    } catch (\Exception $e){
-        echo 'Belum terkoneksi database, error:'.$e->getMessage();
-    }
-});
+Route::get('/login', [ApotekController::class,'login']);
+
+Route::get('/daftar-obat', [ApotekController::class,'daftarobat']);

@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 
 class ApotekController extends Controller
 {
-    public function formlogin(){
-        return view('formlogin');
+    public function login(){
+        return view('login');
     }
 
     public function indexa(){
-        return view('index');
+        return view('index-admin');
     }
 
     public function index(){ 
@@ -54,5 +54,42 @@ class ApotekController extends Controller
         return view('register');
     }
 
+    public function daftarobat(){ 
+        return view('daftar-obat');
+    }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
