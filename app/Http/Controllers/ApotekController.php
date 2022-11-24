@@ -10,52 +10,84 @@ class ApotekController extends Controller
         return view('login');
     }
 
-    public function indexa(){
-        return view('index-admin');
+    public function beranda(){
+        return view('beranda');
     }
 
-    public function index(){ 
-        return view('index');
+    public function cartpenjualan(){ 
+        return view('cart-penjualan');
     }
 
-    public function about(){ 
-        return view('about');
+    public function dataexpire(){ 
+        return view('data-expire');
     }
 
-    public function cart(){ 
-        return view('cart');
+    public function datakategori(){ 
+        return view('data-kategori');
     }
 
-    public function checkout(){ 
-        return view('checkout');
+    public function dataobat(){ 
+        return view('data-obat');
     }
 
-    public function contact(){ 
-        return view('contact');
+    public function datapembelian(){ 
+        return view('data-pembelian');
     }
 
-    public function main(){ 
-        return view('main');
+    public function datapejualan(){ 
+        return view('data-penjualan');
     }
 
     public function shopsingle(){ 
         return view('shop-single');
     }
 
-    public function shop(){ 
-        return view('shop');
+    public function datasatuan(){ 
+        return view('data-satuan');
     }
 
-    public function thankyou(){ 
-        return view('thankyou');
+    public function datasuplier(){ 
+        return view('data-suplier');
     }
 
     public function register(){ 
         return view('register');
     }
 
-    public function daftarobat(){ 
-        return view('daftar-obat');
+    public function datepicker(){ 
+        return view('datepicker');
+    }
+
+    public function formpenjualan(){ 
+        return view('form-penjualan');
+    }
+
+    public function formpembelian(){ 
+        return view('form-pembelian');
+    }
+
+    public function laporan(){ 
+        return view('laporan');
+    }
+
+    public function pengaturan(){ 
+        return view('pengaturan');
+    }
+
+    public function stokopname(){ 
+        return view('stok-opname');
+    }
+
+    public function struk(){ 
+        return view('struk');
+    }
+
+    public function user(){ 
+        return view('user');
+    }
+
+    public function view(){ 
+        return view('view');
     }
 
 

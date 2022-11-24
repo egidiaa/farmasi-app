@@ -15,20 +15,42 @@ use App\Http\Controllers\ApotekerController;
 |
 */
 
-Route::get('/', [ApotekController::class,'/']);
+Route::get('/beranda', [ApotekController::class,'beranda']);
 
-Route::get('/index', [ApotekController::class,'index']);
+Route::get('/cart-penjualan', [ApotekController::class,'cartpenjualan']);
 
-Route::get('/index-admin', [ApotekController::class,'indexa']);
+Route::get('/data-expire', [ApotekController::class,'dataexpire']);
 
-Route::get('/about', [ApotekController::class,'about']);
+Route::get('/data-kategori', [ApotekController::class,'datakategori']);
 
-Route::get('/contact', [ApotekController::class,'contact']);
+Route::get('/data-obat', [ApotekController::class,'dataobat']);
 
-Route::get('/main', [ApotekController::class,'main']);
+Route::get('/data-pembelian', [ApotekController::class,'datapembelian']);
 
 Route::get('/register', [ApotekController::class,'register']);
 
 Route::get('/login', [ApotekController::class,'login']);
 
-Route::get('/daftar-obat', [ApotekController::class,'daftarobat']);
+Route::get('/data-penjualan', [ApotekController::class,'datapenjualan']);
+
+Route::get('/data-satuan', [ApotekController::class,'datasatuan']);
+
+Route::get('/data-suplier', [ApotekController::class,'datasuplier']);
+
+Route::get('/datepicker', [ApotekController::class,'datepicker']);
+
+Route::get('/form-penjualan', [ApotekController::class,'formpenjualan']);
+
+Route::get('/form-pembelian', [ApotekController::class,'formpembelian']);
+
+Route::get('/laporan', [ApotekController::class,'laporan']);
+
+Route::get('/pengaturan', [ApotekController::class,'pengaturan']);
+
+Route::get('/stok-opname', [ApotekController::class,'stokopname']);
+
+Route::get('/struk', [ApotekController::class,'struk']);
+
+Route::get('/user', [ApotekController::class,'user']);
+
+Route::get('/view', [ApotekController::class,'view']);
