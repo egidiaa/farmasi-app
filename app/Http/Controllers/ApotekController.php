@@ -2,126 +2,83 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Obat;
 use Illuminate\Http\Request;
 
 class ApotekController extends Controller
 {
-    public function login(){
-        return view('login');
+    public function formlogin(){
+        return view('formlogin');
     }
 
-    public function beranda(){
-        return view('beranda');
+    public function index(){ 
+        return view('index');
     }
 
-    public function cartpenjualan(){ 
-        return view('cart-penjualan');
+    public function about(){ 
+        return view('about');
     }
 
-    public function dataexpire(){ 
-        return view('data-expire');
+    public function cart(){ 
+        return view('cart');
     }
 
-    public function datakategori(){ 
-        return view('data-kategori');
+    public function checkout(){ 
+        return view('checkout');
     }
 
-    public function dataobat(){ 
-        return view('data-obat');
+    public function contact(){ 
+        return view('contact');
     }
 
-    public function datapembelian(){ 
-        return view('data-pembelian');
-    }
-
-    public function datapejualan(){ 
-        return view('data-penjualan');
+    public function main(){ 
+        return view('main');
     }
 
     public function shopsingle(){ 
         return view('shop-single');
     }
 
-    public function datasatuan(){ 
-        return view('data-satuan');
+    public function shop(){ 
+        return view('shop');
     }
 
-    public function datasuplier(){ 
-        return view('data-suplier');
+    public function thankyou(){ 
+        return view('thankyou');
     }
 
     public function register(){ 
         return view('register');
     }
 
-    public function datepicker(){ 
-        return view('datepicker');
+    public function blank(){ 
+        return view('admin.blank');
     }
 
-    public function formpenjualan(){ 
-        return view('form-penjualan');
+    public function indexadmin(){ 
+        return view('admin.index-admin');
     }
 
-    public function formpembelian(){ 
-        return view('form-pembelian');
+    public function loginadmin(){ 
+        return view('admin.login-admin');
     }
 
-    public function laporan(){ 
-        return view('laporan');
+    public function registeradmin(){ 
+        return view('admin.register-admin');
     }
 
-    public function pengaturan(){ 
-        return view('pengaturan');
+    public function forgotpassword(){ 
+        return view('admin.forgot-password');
     }
 
-    public function stokopname(){ 
-        return view('stok-opname');
+    public function tables(){ 
+        return view('admin.tables');
     }
 
-    public function struk(){ 
-        return view('struk');
+    public function dataobat(){ 
+        $obat = Obat::all();
+        return view('admin.data-obat',[
+            'obat'=> $obat
+        ]);
     }
-
-    public function user(){ 
-        return view('user');
-    }
-
-    public function view(){ 
-        return view('view');
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 }
