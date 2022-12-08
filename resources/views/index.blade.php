@@ -5,9 +5,7 @@
   <title>NE Pharmacy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
@@ -25,59 +23,9 @@
 </head>
 
 <body>
-
+@include('navbar')
   <div class="site-wrap">
   <div class="site-wrap">
-
-
-    <div class="site-navbar py-2">
-
-      <div class="search-wrap">
-        <div class="container">
-          <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
-          <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
-          </form>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="logo">
-            <div class="site-logo">
-              <a href="/index" class="js-logo-clone"><strong class="text-primary">Farmasi</a>
-            </div>
-          </div>
-          <div class="main-nav d-none d-lg-block">
-            <nav class="site-navigation text-right text-md-center" role="navigation">
-              <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active"><a href="/index">Beranda</a></li>
-                <li><a href="/shop">Toko</a></li>
-                <li class="has-children">
-                  <a href="#">Layanan</a>
-                  <ul class="dropdown">
-                    <li><a href="/login-admin">Login Admin</a></li>
-                    <li><a href="/login-user">Login User</a></li>
-                </li>
-                <li><a href="/about">Tentang Kami</a></li>
-                <li><a href="/contact">Kontak Kami</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="icons">
-            <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-            <a href="/cart" class="icons-btn d-inline-block bag">
-              <span class="icon-shopping-bag"></span>
-              <span class="number" >2</span>
-            </a>
-            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
-                class="icon-menu"></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-
     <div class="owl-carousel owl-single px-0">
       <div class="site-blocks-cover overlay" style="background-image: url('asset/pharma.jpg');">
         <div class="container">

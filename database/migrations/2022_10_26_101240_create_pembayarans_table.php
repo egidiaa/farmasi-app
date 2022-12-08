@@ -14,7 +14,9 @@ class CreatePembayaransTable extends Migration
     public function up()
     {
         Schema::create('pembayarans', function (Blueprint $table) {
-            $table->id('kode_billing');
+            $table->id();
+            $table->string('id_pemesanan');
+            $table->timestamps();
         });
     }
     

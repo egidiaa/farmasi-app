@@ -14,7 +14,11 @@ class CreatePemesanansTable extends Migration
     public function up()
     {
         Schema::create('pemesanans', function (Blueprint $table) {
-            $table->id_pemesanan();
+            $table->id();
+            $table->integer('user_id');
+            $table->integer('total_tagihan');
+            $table->timestamps();
+
         });
     }
     

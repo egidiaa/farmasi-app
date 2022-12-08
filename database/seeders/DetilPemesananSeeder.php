@@ -2,10 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Obat;
 use Illuminate\Database\Seeder;
 
-class ObatSeeder extends Seeder
+class DetilPemesananSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,9 +13,6 @@ class ObatSeeder extends Seeder
      */
     public function run()
     {
-        // Obat::create([
-        //     'nama_obat'=>'amoxcilin',
-        //     'jenis_obat'=>
-        // ]);
+        //
     }
 }

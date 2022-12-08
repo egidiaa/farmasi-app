@@ -6,14 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 
   <link rel="stylesheet" href="css/aos.css">
@@ -24,9 +21,19 @@
 </head>
 
 <body>
+  @if (session()->has('salah'))
+    <script type="text/javascript">
+        alert('{{ session('salah') }}');
+    </script>
+  @endif 
+  @if (session()->has('success'))
+    <script type="text/javascript">
+        alert('{{ session('success') }}');
+    </script>
+  @endif 
 <div class="content">
     <div class="container">
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-md-6">
           <img src="asset/pharma.jpg" alt="Image" class="img-fluid">
         </div>
@@ -37,15 +44,16 @@
               <h3>Sign In</h3>
               <p class="mb-4">Masukkan Username dan Password.</p>
             </div>
-            <form action="#" method="post">
+            <form action="" method="post">
+              @csrf
               <div class="form-group first">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" id="username">
+                <input type="email" required name="email" value="{{ session('email') }}" class="form-control" id="username">
 
               </div>
               <div class="form-group last mb-4">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" required name="password" class="form-control" id="password">
                 
               </div>
               
@@ -57,8 +65,8 @@
               </div>
 
               
-              <a href="/shop" class="btn btn-block btn-primary">login</a>
-
+              <button type="submit" class="btn btn-block btn-primary">login</button>
+            </form>
               <span class="d-block text-left my-4 text-muted">Not a member? <a href="/register">Register Now</a></span>
           
         </div>
