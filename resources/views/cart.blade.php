@@ -158,7 +158,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr id="tes">
                     <td class="product-thumbnail">
                       <img src="asset/product_02.png" alt="Image" class="img-fluid">
                     </td>
@@ -180,7 +180,7 @@
     
                     </td>
                     <td>$49.00</td>
-                    <td><a href="#" class="btn btn-primary height-auto btn-sm">X</a></td>
+                    <td><a   class="btn btn-primary deletebutton height-auto btn-sm">X</a></td>
                   </tr>
     
                   <tr>
@@ -314,6 +314,13 @@
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+      $('.deletebutton').click(function (){
+       if(confirm('yakin dek?')){
+        $('#tes').hide();
+       }
+      });
+  </script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
