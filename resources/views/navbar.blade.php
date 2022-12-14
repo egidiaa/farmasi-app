@@ -11,18 +11,20 @@
             <ul class="site-menu js-clone-nav d-none d-lg-block">
               <li class="active"><a href="/">Beranda</a></li>
               <li><a href="/shop">Toko</a></li>
-              <li class="has-children">
-                <a>Layanan</a>
-                <ul class="dropdown">
-                <li><a href="/formlogin">Login</a></li>
-                <li><a href="/about">Tentang Kami</a></li>
-                <li><a href="/contact">Kontak Kami</a></li>
-            </ul>
-        </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Layanan
+                </a>
+                <ul class="dropdown-menu" >
+                  <li><a href="/formlogin"style="margin-left: 10px">Login</a></li>
+                  <li><a href="/about" style="margin-left: 10px">Tentang Kami</a></li>
+                  <li><a href="/contact" style="margin-left: 10px">Kontak Kami</a></li>
+                </ul>
+              </li>
+          
         <li> 
             <a href="/cart" class="icons-btn d-inline-block">
             <span class="icon-menu"><i class="fa-solid fa-cart-shopping"></i></span>
-            <span class="number" >2</span>
             </a>
         </li>
             </ul>
