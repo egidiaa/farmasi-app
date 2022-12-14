@@ -15,11 +15,13 @@ class CreateObatsTable extends Migration
     {
         Schema::create('obats', function (Blueprint $table) {
             $table->id();
+            $table->string('kode_obat', 5);
             $table->string('nama_obat');
-            $table->string('jenis_obat');
-            $table->string('kategori_obat');
-            $table->integer('stok_obat');
-            $table->integer('harga_obat');
+            $table->integer('stock');
+            $table->string('satuan', 20);
+            $table->decimal('harga_beli', 20, 2);
+            $table->decimal('harga_jual', 20, 2);
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

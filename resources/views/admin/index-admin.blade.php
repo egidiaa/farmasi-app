@@ -57,6 +57,7 @@
                             </div>
                         </div>
                     </form>
+                 
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -249,7 +250,23 @@
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
-
+                    <div>
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="card shadow-lg">
+                                    <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <h1 class="fs-3 mb-2">Apa Kabar, <span class="fw-semibold">
+                                                {{ucfirst(auth()->user()->nama)}}
+                                                </span></h1>
+                                            <h4 class="fs-5 text-muted mb-4">{{ now()->format('F d, Y') }}</h4>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Content Row -->
                     <div class="row">
 
