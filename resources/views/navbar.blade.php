@@ -11,14 +11,28 @@
             <ul class="site-menu js-clone-nav d-none d-lg-block">
               <li class="active"><a href="/">Beranda</a></li>
               <li><a href="/shop">Toko</a></li>
+              <li><a href="/about" style="margin-left: 10px">Tentang Kami</a></li>
+              <li><a href="/contact" style="margin-left: 10px">Kontak Kami</a></li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Layanan
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  @if (auth()->check())
+                  hi {{ auth()->user()->nama }}
+                  @else
+                  Layanan
+                  @endif
                 </a>
                 <ul class="dropdown-menu" >
+                  @if (auth()->check())
+                  @if (auth()->user()->level == 'admin')
+                  <li><a href="/indexadmin"style="margin-left: 10px">Dashboard</a></li>
+                  @else
+                  <li><a href="/dashboarduser"style="margin-left: 10px">Dashboard</a></li>
+                  @endif
+                  <li><a href="/logout"style="margin-left: 10px">Logout</a></li>
+                  @else
                   <li><a href="/formlogin"style="margin-left: 10px">Login</a></li>
-                  <li><a href="/about" style="margin-left: 10px">Tentang Kami</a></li>
-                  <li><a href="/contact" style="margin-left: 10px">Kontak Kami</a></li>
+                  <li><a href="/register"style="margin-left: 10px">Register</a></li>
+                  @endif
                 </ul>
               </li>
           

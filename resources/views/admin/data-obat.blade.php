@@ -10,18 +10,32 @@
     <meta name="author" content="">
 
     <title>Admin</title>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
   
-    <!-- Custom fonts for this template-->
-    <link rel="stylesheet" href="https//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https//cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https//cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">  
-  <script src="	https//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+  
+  
+    <link rel="stylesheet" href="css/aos.css">
+  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
   
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
+@if (session()->has('success'))
+    <script>
+        alert('{{ session('success') }}')
+    </script>
+@endif
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -187,8 +201,8 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https//source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
+                                        {{-- <img class="rounded-circle" src="https//source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt=""> --}}
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div>
@@ -259,18 +273,27 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <button type="button" class="btn-close btn" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              ...
-                            </div>
+                                <form action="/tambah-obat" method="post" enctype="multipart/form-data">
+                                    @csrf
+                               <input  required class="form-control mb-3" type="text" name="kode_obat" placeholder="kode obat" id="">
+                               <input  required class="form-control mb-3" type="text" name="nama_obat" placeholder="nama obat"  id="">
+                               <input  required class="form-control mb-3" type="number" name="stock" placeholder="stock"  id="">
+                                <input required class="form-control mb-3" type="number" name="satuan" placeholder="stock"  id="">
+                                <input required class="form-control mb-3" type="number" name="harga_beli" placeholder="harga beli"  id="">
+                                <input required class="form-control mb-3" type="number" name="harga_jual" placeholder="harga jual" id="">
+                                <input required class="form-control" type="file" name="gambar" id="">
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
+                              <button type="submit" class="btn btn-primary">Save changes</button>
                             </div>
+                                </form>
                           </div>
                         </div>
                       </div>
+                    </div>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -280,46 +303,50 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>Kode Obat</th>
                                             <th>Nama Obat</th>
-                                            <th>Harga</th>
+                                            <th>Stock</th>
+                                            <th>Satuan</th>
+                                            <th>Harga beli</th>
+                                            <th>Harga jual</th>
+                                            <th>Gambar</th>
                                             <th>Edit</th>
+                                            <th>Hapus</th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($obat as $item)
-                                        @php
-                                            $no =0;
-                                        @endphp
-                                        <tr>
+                                       
+                                        <tr id="old{{ $item->id }}">
+                                            <td>{{$item->kode_obat}}</td>
                                             <td>{{$item->nama_obat}}</td>
-                                            <td>{{$item->harga}}</td>
-                                            <td><button class="btn" data-bs-toggle="modal" data-bs-target="#obat{{$item->nama_obat}}"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button></td>
-                                            <div class="modal fade" id="obat{{$item->nama_obat}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                  <div class="modal-content">
-                                                    <div class="modal-header">
-                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <input type="text" name="nama_obat" class="form-control" value="{{$item->nama_obat}}" id="">
-                                                        </div>
-                                                        <div class="col">
-                                                            <input type="text" name="nama_obat" class="form-control" value="{{$item->harga}}" id="">
-
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                      <button type="button" class="btn btn-primary">Save changes</button>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div> 
-                                        
+                                            <td>{{$item->stock}}</td>
+                                            <td>{{$item->satuan}}</td>
+                                            <td>{{$item->harga_beli}}</td>
+                                            <td>{{$item->harga_jual}}</td>
+                                            <td><img src="images/obat/{{$item->image}}" width="100% " alt=""></td>
+                                            <td><button onclick="edit('{{ $item->id }}')" class="btn btn-primary"> <i class="fa-sharp fa-solid fa-pen-to-square"></i></button></td>
+                                            <td>
+                                                <a href="/hapus-obat?id={{$item->kode_obat}}" onclick="return confirm('Apakah anda yakin untuk menghapus?')" class="btn btn-danger"> <i class="fa-sharp fa-solid fa-trash"></i></a>
+                                            </td>
+                                        </tr>, 
+                                        <tr class="hide" id="edit{{ $item->id }}">
+                                            <form action="/edit-obat" method="post" enctype="multipart/form-data">
+                                                @csrf
+                                                <input type="hidden" name="id" value="{{ $item->id }}">
+                                            <td><input class="form-control" type="text" name="kode_obat" value="{{$item->kode_obat}}" id=""></td>
+                                            <td><input class="form-control" type="text" name="nama_obat" value="{{$item->nama_obat}}" id=""></td>
+                                            <td><input class="form-control" type="number" name="stock" value="{{$item->stock}}" id=""></td>
+                                            <td><input class="form-control" type="number" name="satuan" value="{{$item->satuan}}" id=""></td>
+                                            <td><input class="form-control" type="number" name="harga_beli" value="{{$item->harga_beli}}" id=""></td>
+                                            <td><input class="form-control" type="number" name="harga_jual" value="{{$item->harga_jual}}" id=""></td>
+                                            <td><input class="form-control" type="file" name="gambar" id=""></td>
+                                            <td><button type="submit" class="btn btn-success" ><i class="fa-sharp fa-solid fa-save"></i></button></td>
+                                            <td>
+                                                <a onclick="return confirm('Apakah anda yakin untuk menghapus?')" href="/hapus-obat?id={{$item->kode_obat}}" class="btn btn-danger"> <i class="fa-sharp fa-solid fa-trash"></i></a>
+                                            </td>
+                                        </form>
                                         </tr>
                                        
                                         @endforeach
@@ -371,19 +398,36 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="/logout">Logout</a>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+  
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function save(id) {
    
-    <script src="https//cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    }
+  $(document).ready(function () {
+    $('.hide').hide();
+  });
+    function edit(idobat) {
+        $('#old'+idobat).hide();
+        $('#edit'+idobat).show();
+    }
   </script>
-  <script src="https//cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+
 </body>
 
 </html>

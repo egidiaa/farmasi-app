@@ -37,4 +37,7 @@ Route::group(['middleware'=>['auth','ceklevel:admin']],function ()
 Route::get('/dataobat', [ApotekController::class,'dataobat']);
 Route::get('/indexadmin', [ApotekController::class,'indexadmin']);
 Route::get('/tables', [ApotekController::class,'tables']);
+Route::post('/edit-obat', [ApotekController::class,'editobat']);
+Route::get('/hapus-obat', [ApotekController::class,'hapusobat']);
+Route::post('/tambah-obat', [ApotekController::class,'tambahobat']);
 });

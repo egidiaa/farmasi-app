@@ -6,8 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
@@ -20,73 +19,16 @@
   <link rel="stylesheet" href="css/aos.css">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
 
-<div class="site-wrap">
   <div class="site-wrap">
+    <div class="site-wrap">
+    @include('navbar')
 
-
-    <div class="site-navbar py-2">
-
-      <div class="search-wrap">
-        <div class="container">
-          <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
-          <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
-          </form>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="logo">
-            <div class="site-logo">
-              <a href="/index" class="js-logo-clone"><strong class="text-primary">Farmasi</a>
-            </div>
-          </div>
-          <div class="main-nav d-none d-lg-block">
-            <nav class="site-navigation text-right text-md-center" role="navigation">
-              <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active"><a href="/index">Beranda</a></li>
-                <li><a href="/shop">Toko</a></li>
-                <li class="has-children">
-                  <a href="/shop">Produk</a>
-                  <ul class="dropdown">
-                    <li><a href="/shop">Suplemen</a></li>
-                    <li class="has-children">
-                      <a href="/shop">Vitamin</a>
-                      <ul class="dropdown">
-                        <li><a href="/shop">Suplemen</a></li>
-                        <li><a href="/shop">Vitamin</a></li>
-                        <li><a href="/shop">Diet &amp; Nutrisi</a></li>
-                        <li><a href="/shop">Teh &amp; Kopi</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="/shop">Diet &amp; Nutrisi</a></li>
-                    <li><a href="/shop">Teh &amp; Kopi</a></li>
-                    
-                  </ul>
-                </li>
-                <li><a href="/about">Tentang Kami</a></li>
-                <li><a href="/contact">Kontak Kami</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="icons">
-            <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-            <a href="/cart" class="icons-btn d-inline-block bag">
-              <span class="icon-shopping-bag"></span>
-              <span class="number">2</span>
-            </a>
-            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
-                class="icon-menu"></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="site-section py-5" data-aos="fade">
       <div class="container">
@@ -189,6 +131,7 @@
     </footer>
   </div>
 
+ 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
@@ -198,6 +141,9 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 </body>
 

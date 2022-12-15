@@ -254,81 +254,21 @@
                                         <tr>
                                             <th>Nama</th>
                                             <th>Alamat</th>
-                                            <th>Umur</th>
                                             <th>No.Telp</th>
-                                            <th>Tanggal Transaksi</th>
                                             <th>Edit</th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($customer as $item)
                                         <tr>
-                                            <td>Nela Prajna</td>
-                                            <td>Surabaya</td>
-                                            <td>25</td>
-                                            <td>08525345675</td>
-                                            <td>2011/04/25</td>
+                                            <td>{{ $item->nama }}</td>
+                                            <td>{{ $item->address }}</td>
+                                            <td>{{ $item->no_telp }}</td>
                                             <td><button class="btn"><i class="fa-sharp fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash"></i></button></td>
                                         </tr>
-                                        <tr>
-                                            <td>Egi Maulidya</td>
-                                            <td>Gresik</td>
-                                            <td>21</td>
-                                            <td>08765432</td>
-                                            <td>2011/07/25</td>
-                                            <td><button class="btn"><i class="fa-sharp fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Akmal Nadya</td>
-                                            <td>Sidoarjo</td>
-                                            <td>18</td>
-                                            <td>08765432</td>
-                                            <td>2011/07/25</td>
-                                            <td><button class="btn"><i class="fa-sharp fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Yuyun Aldilla</td>
-                                            <td>Palembang</td>
-                                            <td>22</td>
-                                            <td>08765432</td>
-                                            <td>2012/03/29</td>
-                                            <td><button class="btn"><i class="fa-sharp fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash"></i></button></td>                                        </tr>
-                                        <tr>
-                                            <td>Airi Satou</td>
-                                            <td>Surabaya</td>
-                                            <td>30</td>
-                                            <td>08976542</td>
-                                            <td>2008/11/28</td>
-                                            <td><button class="btn"><i class="fa-sharp fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash"></i></button></td>                                        </tr>
-                                        <tr>
-                                            <td>Rizqi Fairuz</td>
-                                            <td>Gresik</td>
-                                            <td>32</td>
-                                            <td>0896531</td>
-                                            <td>2012/12/02</td>
-                                            <td><button class="btn"><i class="fa-sharp fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash"></i></button></td>                                        </tr>
-                                        <tr>
-                                            <td>Risma Qulityana</td>
-                                            <td>Sidoarjo</td>
-                                            <td>24</td>
-                                            <td>08965432</td>
-                                            <td>2012/08/06</td>
-                                            <td><button class="btn"><i class="fa-sharp fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash"></i></button></td>                                        </tr>
-                                        <tr>
-                                            <td>Berlin Fadhillah</td>
-                                            <td>Surabaya</td>
-                                            <td>25</td>
-                                            <td>08654321</td>
-                                            <td>2011/06/27</td>
-                                            <td><button class="btn"><i class="fa-sharp fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash"></i></button></td>                                        </tr>
-                                        <tr>
-                                            <td>Natassya Aldella</td>
-                                            <td>Surabaya</td>
-                                            <td>24</td>
-                                            <td>09876543</td>
-                                            <td>2011/01/25</td>
-                                            <td><button class="btn"><i class="fa-sharp fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash"></i></button></td>                                        </tr>
-                                    </tbody>
+                                        @endforeach
+                                            </tbody>
                                 </table>
                             </div>
                         </div>

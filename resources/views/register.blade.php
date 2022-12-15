@@ -50,6 +50,24 @@
                 </div>
                 @enderror
               </div>
+              <div class="form-group first">
+                <label for="email">Your Phone Number</label>
+                <input type="text" name="no_telp" class="form-control  @error('no_telp') is-invalid @enderror "  value="{{ old('no_telp') }}" id="email">
+                @error('no_Telp')
+                <div class="invalid-feedback">
+                    {{ $message }}
+                </div>
+                @enderror
+              </div>
+              <div class="form-group first">
+                <label for="email">Your address</label>
+                <input type="text" name="address" class="form-control  @error('address') is-invalid @enderror "  value="{{ old('address') }}" id="email">
+                @error('address')
+                <div class="invalid-feedback">
+                    {{ $message }}
+                </div>
+                @enderror
+              </div>
 
               <div class="form-group last mb-4">
                 <label for="password">Password</label>

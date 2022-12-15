@@ -28,13 +28,21 @@ class ApotekController extends Controller
   
         return route('login');
     }
+   
+    public function hapusobat()
+    {
+        Obat::where('kode_obat',request('id'))->delete();
+        return back()->withSuccess('Data berhasil dihapus');
+    }
     public function registerpost(Request $request)
     {
         $valid =  $request->validate([
             'nama' => 'required',
             'email' => 'email|unique:users|required',
             'password' => 'min:5|required',
-            'password_confirmation' => 'min:5|required|same:password'
+            'password_confirmation' => 'min:5|required|same:password',
+            'address'=>'required',
+            'no_telp'=>'required'
         ]);
         $valid['password'] = bcrypt($request['password']);
         $valid['level'] = "user";
@@ -44,6 +52,49 @@ class ApotekController extends Controller
 
     public function index(){ 
         return view('index');
+    }
+    public function tambahobat(Request $request)
+    {
+        $imagename = $request->file('gambar')->getClientOriginalName();
+        $request->file('gambar')->move('images/obat/',$imagename);
+        $data = [
+            'kode_obat'=>$request->kode_obat,
+                'nama_obat'=>$request->nama_obat,
+                'stock'=>$request->stock,
+                'satuan'=>$request->satuan,
+                'harga_beli'=>$request->harga_beli,
+                'harga_jual'=>$request->harga_jual,
+                'image'=>$imagename
+        ];
+        Obat::create($data);
+        return back()->withSuccess('Data berhasil tambahkan');
+    }
+    public function editobat(Request $request)
+    {
+        $request->file('gambar');
+        if($request->file('gambar')!=null){
+            $imagename = $request->file('gambar')->getClientOriginalName();
+            $request->file('gambar')->move('images/obat/',$imagename);
+            Obat::find($request->id)->update([
+                'kode_obat'=>$request->kode_obat,
+                'nama_obat'=>$request->nama_obat,
+                'stock'=>$request->stock,
+                'satuan'=>$request->satuan,
+                'harga_beli'=>$request->harga_beli,
+                'harga_jual'=>$request->harga_jual,
+                'image'=>$imagename
+            ]);
+        }else{
+            Obat::find($request->id)->update([
+                'kode_obat'=>$request->kode_obat,
+                'nama_obat'=>$request->nama_obat,
+                'stock'=>$request->stock,
+                'satuan'=>$request->satuan,
+                'harga_beli'=>$request->harga_beli,
+                'harga_jual'=>$request->harga_jual
+            ]);
+        }
+        return back()->withSuccess('Data berhasil diperbarui');
     }
 
     public function logout()
@@ -106,7 +157,10 @@ class ApotekController extends Controller
     }
 
     public function tables(){ 
-        return view('admin.tables');
+        $customer = User::where('level','user')->get();
+        return view('admin.tables',[
+            'customer'=>$customer
+        ]);
     }
 
     public function dataobat(){ 

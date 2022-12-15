@@ -19,6 +19,8 @@ class UserSeeder extends Seeder
         'level'=>'admin',
         'email'=>'nadya@gmail.com',
         'password'=>bcrypt('nadyacantik'),
+        'no_telp'=>'0812345678',
+        'address'=>'jl itu'
       ]);
     }
 }
