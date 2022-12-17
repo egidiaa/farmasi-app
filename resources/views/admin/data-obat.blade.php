@@ -271,7 +271,7 @@
                                <input  required class="form-control mb-3" type="text" name="kode_obat" placeholder="kode obat" id="">
                                <input  required class="form-control mb-3" type="text" name="nama_obat" placeholder="nama obat"  id="">
                                <input  required class="form-control mb-3" type="number" name="stock" placeholder="stock"  id="">
-                                <input required class="form-control mb-3" type="number" name="satuan" placeholder="satuan"  id="">
+                                <input required class="form-control mb-3" type="text" name="satuan" placeholder="Deskripsi"  id="">
                                 <input required class="form-control mb-3" type="number" name="harga_beli" placeholder="harga beli"  id="">
                                 <input required class="form-control mb-3" type="number" name="harga_jual" placeholder="harga jual" id="">
                                 <input required class="form-control" type="file" name="gambar" id="">
@@ -296,7 +296,7 @@
                                             <th>Kode Obat</th>
                                             <th>Nama Obat</th>
                                             <th>Stock</th>
-                                            <th>Satuan</th>
+                                            <th>Deskripsi</th>
                                             <th>Harga beli</th>
                                             <th>Harga jual</th>
                                             <th>Gambar</th>
@@ -328,7 +328,7 @@
                                             <td><input class="form-control" type="text" name="kode_obat" value="{{$item->kode_obat}}" id=""></td>
                                             <td><input class="form-control" type="text" name="nama_obat" value="{{$item->nama_obat}}" id=""></td>
                                             <td><input class="form-control" type="number" name="stock" value="{{$item->stock}}" id=""></td>
-                                            <td><input class="form-control" type="number" name="satuan" value="{{$item->satuan}}" id=""></td>
+                                            <td><input class="form-control" type="text" name="satuan" value="{{$item->satuan}}" id=""></td>
                                             <td><input class="form-control" type="number" name="harga_beli" value="{{$item->harga_beli}}" id=""></td>
                                             <td><input class="form-control" type="number" name="harga_jual" value="{{$item->harga_jual}}" id=""></td>
                                             <td><input class="form-control" type="file" name="gambar" id=""></td>

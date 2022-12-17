@@ -10,13 +10,6 @@
 
         </div>
         <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
-          <h3 class="footer-heading mb-4">Navigasi</h3>
-          <ul class="list-unstyled">
-            <li><a href="/shop">Suplemen</a></li>
-            <li><a href="/shop">Vitamin</a></li>
-            <li><a href="/shop">Diet &amp; Nutrisi</a></li>
-            <li><a href="/shop">Teh &amp; Kopi</a></li>
-          </ul>
         </div>
 
         <div class="col-md-6 col-lg-3">

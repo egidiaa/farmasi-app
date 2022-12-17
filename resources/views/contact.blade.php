@@ -130,27 +130,11 @@
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
 
-            <div class="block-7">
-              <h3 class="footer-heading mb-4">Tentang <strong class="text-primary">Kami</strong></h3>
-              <p>Solusi Cepat, Mudah, dan Nyaman Untuk Kebutuhan Obat Anda.</p>
-            </div>
-
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="block-5 mb-5">
-              <h3 class="footer-heading mb-4">Info Kontak</h3>
-              <ul class="list-unstyled">
-                <li class="address">Surabaya, Indonesia</li>
-                <li class="phone"><a href="tel://081234567890"></a>081234567890</li>
-                <li class="email">nepharmacy@domain.com</li>
-              </ul>
-            </div>
 
 
           </div>
+          @include('footer')
         </div>
 
         </div>

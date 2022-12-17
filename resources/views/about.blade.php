@@ -66,8 +66,8 @@
               <span class="icon-refresh2 text-primary"></span>
             </div>
             <div class="text">
-              <h2> Gratis Pengembalian Barang </h2>
-              <p>Obat dapat dikembalikan apabila tidak sesuai dengan pesanan yang Anda minta.</p>
+              <h4> Barang Terjamin Mutunya </h3>
+              <p>Kami pastikan obat yang anda terima sesuai dengan yang anda minta.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
@@ -82,24 +82,10 @@
 
     <footer class="site-footer bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="block-7">
-              <h3 class="footer-heading mb-4">Tentang Kami <strong class="text-primary"></strong></h3>
-              <p>Solusi Cepat, Mudah, dan Nyaman Untuk Kebutuhan Obat Anda.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="block-5 mb-5">
-              <h3 class="footer-heading mb-4">Info Kontak</h3>
-              <ul class="list-unstyled">
-                <li class="address">Surabaya, Indonesia</li>
-                <li class="phone"><a href="tel://081234567890"></a>081234567890</li>
-                <li class="email">nepharmacy@gmail.com</li>
-              </ul>
-            </div>
+        
 
         </div>
+        @include('footer')
       </div>
     </footer>
 

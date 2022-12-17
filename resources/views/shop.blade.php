@@ -49,8 +49,8 @@
             @foreach ($obat as $item)
             <div class="col-sm-6 col-lg-4 text-center item mb-4 item-v2">
               {{-- <span class="onsale">Sale</span> --}}
-              <a href="/shop-single"> <img src="asset/{{$item->image}}" height="370px" width="270px" alt="Image"></a>
-              <h3 class="text-dark"><a href="/shop-single">{{$item->nama_obat}}, 60ml </a></h3>
+              <a href="/shop-single/{{$item->kode_obat}}"> <img src="images/obat/{{$item->image}}" height="370px" width="270px" alt="Image"></a>
+              <h3 class="text-dark"><a href="/shop-single/{{$item->kode_obat}}">{{$item->nama_obat}} </a></h3>
               <p class="price"> RP {{$item->harga_jual}}</p>
             </div>
             @endforeach

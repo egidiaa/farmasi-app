@@ -16,7 +16,7 @@ use App\Models\Apoteker;
 */
 
 // Route::get('/', [ApotekController::class,'/']);
-
+Route::post('/tambah-keranjang', [ApotekController::class,'tambahkeranjang']);
 Route::get('/', [ApotekController::class,'index'])->name('home');
 Route::get('/about', [ApotekController::class,'about']);
 Route::get('/cart', [ApotekController::class,'cart']);

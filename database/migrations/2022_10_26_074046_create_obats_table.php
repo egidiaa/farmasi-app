@@ -18,7 +18,7 @@ class CreateObatsTable extends Migration
             $table->string('kode_obat', 5);
             $table->string('nama_obat');
             $table->integer('stock');
-            $table->string('satuan', 20);
+            $table->string('satuan');
             $table->decimal('harga_beli', 20, 2);
             $table->decimal('harga_jual', 20, 2);
             $table->string('image')->nullable();

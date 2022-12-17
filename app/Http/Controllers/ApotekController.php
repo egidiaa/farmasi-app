@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
+use App\Models\detil_pemesanan;
 use App\Models\Obat;
+use App\Models\Pemesanan;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -126,10 +128,51 @@ class ApotekController extends Controller
     public function checkout(){ 
         return view('checkout');
     }
-
+    
     public function contact(){ 
         return view('contact');
     }
+    public function tambahkeranjang()
+    {
+        $idpemesanan = Pemesanan::where('user_id',auth()->user()->id)->count();
+        if ($idpemesanan == 0) {
+               $pemesanan = Pemesanan::create([
+                'user_id'=>auth()->user()->id,
+                'total_tagihan'=>0
+               ]);
+        }else{
+            $pemesanan = Pemesanan::where('user_id',auth()->user()->id)->get();
+        }
+        $qty = request('qty');
+        $id = request('id');
+        
+        $keranjang = DB::table('detil_pemesanans as dp')
+        ->join('pemesanans as p', 'p.id', '=', 'dp.id_pemesanan')
+        ->join('obats as o','o.id','=','dp.id_obat')
+        ->where('dp.id_obat',$id)->where('p.user_id',auth()->user()->id)
+        ->get();
+        if($keranjang==null){
+            dd($keranjang);
+            $jumlahobat = $keranjang[0]->jumlah_obat + $qty;
+            $total_tagihan = $keranjang[0]->total_tagihan + ($qty * $keranjang[0]->harga_jual);
+            DB::table('detil_pemesanans as dp')
+            ->join('pemesanans as p', 'p.id', '=', 'dp.id_pemesanan')
+            ->where('dp.id_obat',$id)->where('p.user_id',auth()->user()->id)->update(['jumlah_obat'=>$jumlahobat,'total_tagihan'=>$total_tagihan]);
+        }else{
+            $data = [
+                'id_obat'=>$id,
+                'id_pemesanan'=>$pemesanan[0]->id,
+                'jumlah_obat'=>$qty
+            ];
+            $obat =  Obat::find($id);
+            $total_tagihan = $pemesanan[0]->total_tagihan +($qty * $obat->harga_jual);
+                Pemesanan::find($pemesanan[0]->id)->update(['total_tagihan'=>$total_tagihan]);
+                $data['id_pemesanan'] = $pemesanan[0]->id;
+                detil_pemesanan::create($data);
+            }
+            return response('Data berhasil ditambahkan');
+        }
+
 
     public function shopsingle($id){
         $obat = Obat::where('kode_obat',$id)->get(); 
