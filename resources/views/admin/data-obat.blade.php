@@ -258,21 +258,19 @@
 
                 
                     <!-- Page Heading -->
-                    <div class="row">
+                    <div class="row mb-3">
                         <div class="col-md-6">
                             <h1 class="h3 mb-2 text-gray-800">Data Obat</h1>
                         </div>
-                        <div class="col-md-6 ">
-                            <div class="h3 mb-2  text-gray-800" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Tambah Obat
-                            </div>
+                        <div class="col-md-6">
+                               <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary ms-5" style="margin-left:70%">Tambah Obat  <i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Obat</h1>
                               <button type="button" class="btn-close btn" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -281,7 +279,7 @@
                                <input  required class="form-control mb-3" type="text" name="kode_obat" placeholder="kode obat" id="">
                                <input  required class="form-control mb-3" type="text" name="nama_obat" placeholder="nama obat"  id="">
                                <input  required class="form-control mb-3" type="number" name="stock" placeholder="stock"  id="">
-                                <input required class="form-control mb-3" type="number" name="satuan" placeholder="stock"  id="">
+                                <input required class="form-control mb-3" type="number" name="satuan" placeholder="satuan"  id="">
                                 <input required class="form-control mb-3" type="number" name="harga_beli" placeholder="harga beli"  id="">
                                 <input required class="form-control mb-3" type="number" name="harga_jual" placeholder="harga jual" id="">
                                 <input required class="form-control" type="file" name="gambar" id="">

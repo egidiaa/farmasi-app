@@ -22,7 +22,7 @@ Route::get('/about', [ApotekController::class,'about']);
 Route::get('/cart', [ApotekController::class,'cart']);
 Route::get('/checkout', [ApotekController::class,'checkout']);
 Route::get('/contact', [ApotekController::class,'contact']);
-Route::get('/shop-single', [ApotekController::class,'shopsingle']);
+Route::get('/shop-single/{id}', [ApotekController::class,'shopsingle']);
 Route::get('/shop', [ApotekController::class,'shop']);
 Route::get('/thankyou', [ApotekController::class,'thankyou']);
 Route::get('/formlogin', [ApotekController::class,'formlogin'])->name('login');
@@ -34,6 +34,7 @@ Route::get('/registeradmin', [ApotekController::class,'registeradmin']);
 
 Route::group(['middleware'=>['auth','ceklevel:admin']],function ()
 {
+
 Route::get('/dataobat', [ApotekController::class,'dataobat']);
 Route::get('/indexadmin', [ApotekController::class,'indexadmin']);
 Route::get('/tables', [ApotekController::class,'tables']);

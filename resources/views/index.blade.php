@@ -5,8 +5,7 @@
   <title>NE Pharmacy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css" integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
@@ -99,34 +98,36 @@
           </div>
         </div>
         <div class="row">
+      
           <div class="col-md-12 block-3 products-wrap">
             <div class="nonloop-block-3 owl-carousel">
-
+          @foreach ($obat as $item)
               <div class="text-center item mb-4 item-v2">
-                <span class="onsale">Sale</span>
-                <a href="/shop-single"> <img src="asset/Amoxicillin.jpeg" alt="Image"></a>
-                <h3 class="text-dark"><a href="/shop-single">Amoxicillin</a></h3>
-                <p class="price">RP 10.000</p>
+                {{-- <span class="onsale">Sale</span> --}}
+                <a href="/shop-single/{{$item->kode_obat}}"> <img src="asset/{{$item->image}}" height="370px" width="270px" alt="Image"></a>
+                <h3 class="text-dark"><a href="/shop-single/{{$item->kode_obat}}">{{$item->nama_obat}}</a></h3>
+                <p class="price">RP {{$item->harga_jual}}</p>
               </div>
+          @endforeach
 
-              <div class="text-center item mb-4 item-v2">
-                <a href="/shop-single"> <img src="asset/entrostop.jpeg" alt="Image"></a>
+              {{-- <div class="text-center item mb-4 item-v2">
+                <a href="/shop-single"> <img src="asset/entrostop.jpg" alt="Image"></a>
                 <h3 class="text-dark"><a href="/shop-single">Entrostop</a></h3>
                 <p class="price">RP 6.000</p>
               </div>
 
               <div class="text-center item mb-4 item-v2">
                 <span class="onsale">Sale</span>
-                <a href="/shop-single"> <img src="asset/hemaviton.jpeg" alt="Image"></a>
-                <h3 class="text-dark"><a href="/shop-single">Hemaviton</a></h3>
-                <p class="price">RP 4.000</p>
+                <a href="/shop-single"> <img src="asset/mixagrip.jpg" alt="Image"></a>
+                <h3 class="text-dark"><a href="/shop-single">Mixagrip</a></h3>
+                <p class="price">RP 3.500</p>
               </div>
 
               <div class="text-center item mb-4 item-v2">
-                <a href="/shop-single"> <img src="asset/imboost.jpeg" alt="Image"></a>
+                <a href="/shop-single"> <img src="asset/imboost.png" alt="Image"></a>
                 <h3 class="text-dark"><a href="/shop-single">Imboost</a></h3>
                 <p class="price">RP 12.000</p>
-              </div>
+              </div> --}}
 
             </div>
           </div>
@@ -138,8 +139,8 @@
       <div class="container">
         <div class="row justify-content-center text-center">
          <div class="col-lg-7">
-           <h3 class="text-white">Sign Up untuk diskon 55%</h3>
-           <p class="text-white">Ayo Daftar sekarang juga untuk mendapatkan diskon sebesar 55% sekarang juga!</p>
+           <h3 class="text-white">Sign Up Sekang!</h3>
+           <p class="text-white">Daftar Sekarang juga untuk layanan lebih lanjut</p>
            <p class="mb-0"><a href="/formlogin" class="btn btn-outline-white">Sign up</a></p>
          </div>
         </div>
@@ -160,7 +161,7 @@
 
               <div class="step-number d-flex mb-4">
                 <span>2</span>
-                <p>Menyediakan Obat baru setiap harinya dengan kualitas yang dapat dijamin.</p>
+                <p>Menyediakan Obat yang terjamin mutunya</p>
               </div>
 
               <div class="step-number d-flex mb-4">
@@ -172,35 +173,8 @@
         </div>
       </div>
     </div>
-    <footer class="site-footer bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-
-            <div class="block-7">
-              <h3 class="footer-heading mb-4">Tentang Kami <strong class="text-primary"></strong></h3>
-              <p>Solusi Cepat, Mudah, dan Nyaman Untuk Kebutuhan Obat Anda.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="block-5 mb-5">
-              <h3 class="footer-heading mb-4">Info Kontak</h3>
-              <ul class="list-unstyled">
-                <li class="address">Surabaya, Indonesia</li>
-                <li class="phone"><a href="tel://081234567890"></a>081234567890</li>
-                <li class="email">nepharmacy@gmail.com</li>
-              </ul>
-            </div>
-
-
-          </div>
-        </div>
-
-        </div>
-      </div>
-    </footer>
-  </div>
+    @include('footer')
+     </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -214,7 +188,9 @@
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-
+<script type="text/javascript">
+$('#beranda').addClass('active');
+</script>
 </body>
 
 </html>

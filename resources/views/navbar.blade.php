@@ -9,10 +9,10 @@
         <div class="main-nav d-none d-lg-block">
           <nav class="site-navigation text-right text-md-center" role="navigation">
             <ul class="site-menu js-clone-nav d-none d-lg-block">
-              <li class="active"><a href="/">Beranda</a></li>
-              <li><a href="/shop">Toko</a></li>
-              <li><a href="/about" style="margin-left: 10px">Tentang Kami</a></li>
-              <li><a href="/contact" style="margin-left: 10px">Kontak Kami</a></li>
+              <li id="beranda" ><a href="/">Beranda</a></li>
+              <li id="toko"><a href="/shop">Toko</a></li>
+              <li id="tentangkami"><a href="/about" style="margin-left: 10px">Tentang Kami</a></li>
+              <li id="kontakkami"><a href="/contact" style="margin-left: 10px">Kontak Kami</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   @if (auth()->check())
@@ -36,7 +36,7 @@
                 </ul>
               </li>
           
-        <li> 
+        <li id="cart"> 
             <a href="/cart" class="icons-btn d-inline-block">
             <span class="icon-menu"><i class="fa-solid fa-cart-shopping"></i></span>
             </a>
@@ -53,3 +53,4 @@
       </div>
     </div>
   </div>
+

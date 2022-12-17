@@ -22,5 +22,13 @@ class UserSeeder extends Seeder
         'no_telp'=>'0812345678',
         'address'=>'jl itu'
       ]);
+      User::create([
+        'nama'=>'egidiaaa',
+        'level'=>'user',
+        'email'=>'egii@gmail.com',
+        'password'=>bcrypt('egiimut'),
+        'no_telp'=>'0812345678',
+        'address'=>'jl itu'
+      ]);
     }
 }

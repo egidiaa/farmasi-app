@@ -57,8 +57,8 @@
       <div class="container">
         <div class="row justify-content-center text-center">
          <div class="col-lg-7">
-           <h3 class="text-white">Sign up untuk diskon 55% </h3>
-           <p class="text-white">Ayo Daftar sekarang juga untuk mendapatkan diskon sebesar 55% sekarang juga! </p>
+           <h3 class="text-white">Sign up Sekarang! </h3>
+           <p class="text-white">Daftar Sekarang  </p>
            <p class="mb-0"><a href="/formlogin" class="btn btn-outline-white">Sign up</a></p>
          </div>
         </div>
@@ -144,7 +144,9 @@
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-
+<script type="text/javascript">
+  $('#tentangkami').addClass('active');
+  </script>
 </body>
 
 </html>

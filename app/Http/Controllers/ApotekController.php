@@ -50,9 +50,7 @@ class ApotekController extends Controller
         return redirect('/formlogin')->withSuccess('Selamat anda berhasil terdaftar')->with('email',$valid['email']);;
     }
 
-    public function index(){ 
-        return view('index');
-    }
+
     public function tambahobat(Request $request)
     {
         $imagename = $request->file('gambar')->getClientOriginalName();
@@ -104,6 +102,14 @@ class ApotekController extends Controller
         session()->regenerateToken();
         return redirect('/');
     }
+
+
+    public function index(){ 
+        $obat = Obat::all();
+        return view('index',[
+            'obat'=>$obat
+        ]);
+    }
     public function about(){ 
         return view('about');
     }
@@ -120,14 +126,22 @@ class ApotekController extends Controller
         return view('contact');
     }
 
-    
-
-    public function shopsingle(){ 
-        return view('shop-single');
+    public function shopsingle($id){
+        $obat = Obat::where('kode_obat',$id)->get(); 
+        return view('shop-single',[
+            'obat'=>$obat
+        ]);
     }
 
+    public function tes($id)
+    {
+        return $id;
+    }
     public function shop(){ 
-        return view('shop');
+        $obat = Obat::all();
+        return view('shop',[
+            'obat'=>$obat
+        ]);
     }
 
     public function thankyou(){ 
