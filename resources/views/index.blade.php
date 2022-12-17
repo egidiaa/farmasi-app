@@ -50,7 +50,7 @@
           <div class="row">
             <div class="col-lg-12 mx-auto align-self-center">
               <div class="site-block-cover-content text-center">
-                <h1 class="mb-0">Obat Baru <strong class="text-primary">Setiap Hari</strong></h1>
+                <h1 class="mb-0">Solusi Obat <strong class="text-primary">Setiap Hari</strong></h1>
                 <div class="row justify-content-center mb-5">
                   <div class="col-lg-6 text-center">
                     <p>Temukan Obat yang Anda butuhkan disini sekarang juga.</p>
@@ -172,6 +172,7 @@
         </div>
       </div>
     </div>
+
     <footer class="site-footer bg-light">
       <div class="container">
         <div class="row">

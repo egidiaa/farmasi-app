@@ -24,42 +24,30 @@
 </head>
 
 <body>
-
   <div class="site-wrap">
     <div class="site-wrap">
     @include('navbar')
 
 
-    <div class="site-section py-5" data-aos="fade">
       <div class="container">
-        <div class="row" >
-          <div class="col-lg-4" >
-            <h3 class="text-black h4" >Kenapa Harus Kami</h3>
-            <p>Karena Kami menawarkan solusi pembelian obat yang cepat dan mudah, serta menawarkan berbagai promo dan diskon yang menarik, Khusus untuk Anda sekarang juga.</p>
-            
+        <div class="row  justify-content-center text-center">
+          <div class="col-lg-12 mx-auto align-self-center">
+            <div class="site-block-cover-content text-center">
+            <h3 class="text-black h4" >Kenapa Harus Kami ?</h3>
+            <p>Karena Kami menawarkan solusi pembelian obat yang cepat dan mudah hanya dengan sekali klik. </p>
           </div>
         </div>
       </div>
     </div>    
 
-    <div class="site-section bg-light custom-border-bottom" data-aos="fade">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
 
-
-
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5">
-    
-
-    <div class="site-section bg-image overlay" style="background-image: url('asset/hero_bg_2.jpg');">
+    <div class="site-section bg-image overlay" style="background-image: url('asset/6.jpg');">
       <div class="container">
         <div class="row justify-content-center text-center">
          <div class="col-lg-7">
-           <h3 class="text-white">Sign up untuk diskon 55% </h3>
-           <p class="text-white">Ayo Daftar sekarang juga untuk mendapatkan diskon sebesar 55% sekarang juga! </p>
-           <p class="mb-0"><a href="/formlogin" class="btn btn-outline-white">Sign up</a></p>
+           <h3 class="text-white">Sign up Now</h3>
+           <p class="text-white">Ayo Daftar sekarang! </p>
+           <p class="mb-0"><a href="/register" class="btn btn-outline-white">Sign up</a></p>
          </div>
         </div>
       </div>
@@ -78,7 +66,7 @@
               <span class="icon-refresh2 text-primary"></span>
             </div>
             <div class="text">
-              <h2>Gratis Pengembalian Barang</h2>
+              <h2> Gratis Pengembalian Barang </h2>
               <p>Obat dapat dikembalikan apabila tidak sesuai dengan pesanan yang Anda minta.</p>
             </div>
           </div>
@@ -91,45 +79,29 @@
       </div>
     </div>
 
+
     <footer class="site-footer bg-light">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-
             <div class="block-7">
               <h3 class="footer-heading mb-4">Tentang Kami <strong class="text-primary"></strong></h3>
               <p>Solusi Cepat, Mudah, dan Nyaman Untuk Kebutuhan Obat Anda.</p>
             </div>
-
           </div>
-          <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
-            <h3 class="footer-heading mb-4">Navigasi</h3>
-            <ul class="list-unstyled">
-              <li><a href="/shop">Suplemen</a></li>
-              <li><a href="/shop">Vitamin</a></li>
-              <li><a href="/shop">Diet &amp; Nutrisi</a></li>
-              <li><a href="/shop">Teh &amp; Kopi</a></li>
-            </ul>
-          </div>
-
           <div class="col-md-6 col-lg-3">
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Info Kontak</h3>
               <ul class="list-unstyled">
                 <li class="address">Surabaya, Indonesia</li>
                 <li class="phone"><a href="tel://081234567890"></a>081234567890</li>
-                <li class="email">nepharmacy@domain.com</li>
+                <li class="email">nepharmacy@gmail.com</li>
               </ul>
             </div>
-
-
-          </div>
-        </div>
 
         </div>
       </div>
     </footer>
-  </div>
 
  
   <script src="js/jquery-3.3.1.min.js"></script>

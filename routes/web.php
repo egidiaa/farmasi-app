@@ -31,6 +31,7 @@ Route::get('/register', [ApotekController::class,'register']);
 Route::post('/register', [ApotekController::class,'registerpost']);
 Route::any('/logout',[ApotekController::class,'logout']);
 Route::get('/registeradmin', [ApotekController::class,'registeradmin']);
+Route::get('/profil', [ApotekController::class,'profil']);
 
 Route::group(['middleware'=>['auth','ceklevel:admin']],function ()
 {

@@ -23,4 +23,16 @@ class UserSeeder extends Seeder
         'address'=>'jl itu'
       ]);
     }
+
+    public function pelanggan()
+    {
+      User::create([
+        'nama'=>'dyaya',
+        'level'=>'user level 1',
+        'email'=>'nadndyaa@gmail.com',
+        'password'=>bcrypt('nadyabaikhati'),
+        'no_telp'=>'085253816933',
+        'address'=>'jl cerita yang telah usai'
+      ]);
+    }
 }

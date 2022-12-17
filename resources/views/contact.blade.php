@@ -33,7 +33,6 @@
   <div class="site-wrap">
 
 
-
     <div class="bg-light py-3">
       <div class="container">
         <div class="row">
@@ -44,18 +43,18 @@
         </div>
       </div>
     </div>
-
+    <div class="site-blocks-cover overlay" style="background-image: url('asset/c.jpg');">
     <div class="site-section">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="h3 mb-5 text-black">Masuk Sekarang Juga</h2>
+            <h2 class="h3 mb-5 text-black">Kontak Kami Sekarang Juga</h2>
           </div>
           <div class="col-md-12">
     
             <form action="#" method="post">
     
-              <div class="p-3 p-lg-5 border">
+              <div class="m-2 p-lg-1 border">
                 <div class="form-group row">
                   <div class="col-md-6">
                     <label for="c_fname" class="text-black">Nama Depan <span class="text-danger">*</span></label>
@@ -87,7 +86,7 @@
                 </div>
                 <div class="form-group row">
                   <div class="col-lg-12">
-                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Send Message">
+                    <input type="submit" class="btn btn-primary btn-sm btn-block" value="Send Message">
                   </div>
                 </div>
               </div>
@@ -97,6 +96,7 @@
         </div>
       </div>
     </div>
+
 
     <div class="site-section bg-light">
       <div class="container">
@@ -118,8 +118,8 @@
           </div>
           <div class="col-lg-4">
             <div class="p-4 bg-white mb-3 rounded">
-              <span class="d-block text-black h6 text-uppercase">Kalimantan</span>
-              <p class="mb-0">Kalimantan, Indonesia </p>
+              <span class="d-block text-black h6 text-uppercase">Gresik</span>
+              <p class="mb-0">Gresik, Indonesia </p>
             </div>
           </div>
         </div>
@@ -137,15 +137,6 @@
               <p>Solusi Cepat, Mudah, dan Nyaman Untuk Kebutuhan Obat Anda.</p>
             </div>
 
-          </div>
-          <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
-            <h3 class="footer-heading mb-4">Navigasi</h3>
-            <ul class="list-unstyled">
-              <li><a href="/shop">Suplemen</a></li>
-              <li><a href="/shop">Vitamin</a></li>
-              <li><a href="/shop">Diet &amp; Nutrisi</a></li>
-              <li><a href="/shop">Teh &amp; Kopi</a></li>
-            </ul>
           </div>
 
           <div class="col-md-6 col-lg-3">

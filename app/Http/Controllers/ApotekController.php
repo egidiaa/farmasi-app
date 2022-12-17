@@ -28,12 +28,8 @@ class ApotekController extends Controller
   
         return route('login');
     }
-   
-    public function hapusobat()
-    {
-        Obat::where('kode_obat',request('id'))->delete();
-        return back()->withSuccess('Data berhasil dihapus');
-    }
+
+
     public function registerpost(Request $request)
     {
         $valid =  $request->validate([
@@ -50,9 +46,12 @@ class ApotekController extends Controller
         return redirect('/formlogin')->withSuccess('Selamat anda berhasil terdaftar')->with('email',$valid['email']);;
     }
 
+
     public function index(){ 
         return view('index');
     }
+
+
     public function tambahobat(Request $request)
     {
         $imagename = $request->file('gambar')->getClientOriginalName();
@@ -95,6 +94,12 @@ class ApotekController extends Controller
             ]);
         }
         return back()->withSuccess('Data berhasil diperbarui');
+    }
+
+    public function hapusobat()
+    {
+        Obat::where('kode_obat',request('id'))->delete();
+        return back()->withSuccess('Data berhasil dihapus');
     }
 
     public function logout()
@@ -168,5 +173,9 @@ class ApotekController extends Controller
         return view('admin.data-obat',[
             'obat'=> $obat
         ]);
+    }
+
+    public function profil(){
+        return view('admin.profil');
     }
 }
