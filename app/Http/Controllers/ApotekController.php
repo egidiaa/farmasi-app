@@ -286,4 +286,5 @@ class ApotekController extends Controller
     public function profiluser(){
         return view('profiluser');
     }
+
 }

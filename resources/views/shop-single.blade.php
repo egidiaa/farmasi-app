@@ -66,7 +66,7 @@
       <div class="col-lg-7">
         <h3 class="text-white">Cekout Sekarang Juga! </h3>
         <p class="text-white">Segera cekout barang anda sekarang juga dan terimakasih telah memilih NEpharpacy. </p>
-        <p class="mb-0"><a href="/formlogin" class="btn btn-outline-white">-NEpharpacy-</a></p>
+        <p class="mb-0"><a href="/formlogin" class="btn btn-outline-white">-NEpharmacy-</a></p>
       </div>
       </div>
     </div>

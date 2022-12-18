@@ -33,6 +33,7 @@ Route::get('/profil', [ApotekController::class,'profil']);
 Route::get('/profiluser', [ApotekController::class,'profiluser']);
 
 Route::get('/dashboarduser', [ApotekController::class,'dashboarduser']);
+Route::get('/checkout', [ApotekController::class,'checkout']);
 
 Route::group(['middleware'=>['auth','ceklevel:user']],function ()
 {
