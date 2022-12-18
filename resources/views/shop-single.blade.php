@@ -71,6 +71,7 @@
       </div>
     </div>
   </div>
+  <input type="hidden" id="login" value="{{auth()->check()}}">
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -99,14 +100,14 @@
       $('#submit').click(function (e) { 
         e.preventDefault();
         var id = $('#idobat').attr('value');
-        var isLogin = {{auth()->check()}};
+        var isLogin = $('#login').attr('value'); ;
         if(!isLogin){
           window.location.replace('/formlogin');
         }
         var x = parseInt($('#jumlah').val());
         if (isNaN(x)) {
           alert('Masukkan Jumlah yang benar');
-          $('#jumlah').val(1)
+          $('#jumlah').val(1);
         }else{
           $.ajaxSetup({
         headers: {
@@ -119,8 +120,7 @@
               'qty': x
             },
             success: function (response) {
-              console.log(response);
-              alert('data berhasil di tambahkan ngab');
+              alert(response);
           $('#jumlah').val(1)
 
             }

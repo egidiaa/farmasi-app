@@ -16,10 +16,9 @@ use App\Models\Apoteker;
 */
 
 // Route::get('/', [ApotekController::class,'/']);
-Route::post('/tambah-keranjang', [ApotekController::class,'tambahkeranjang']);
+Route::any('/tambah-keranjang', [ApotekController::class,'tambahkeranjang']);
 Route::get('/', [ApotekController::class,'index'])->name('home');
 Route::get('/about', [ApotekController::class,'about']);
-Route::get('/cart', [ApotekController::class,'cart']);
 Route::get('/checkout', [ApotekController::class,'checkout']);
 Route::get('/contact', [ApotekController::class,'contact']);
 Route::get('/shop-single/{id}', [ApotekController::class,'shopsingle']);
@@ -33,13 +32,18 @@ Route::any('/logout',[ApotekController::class,'logout']);
 Route::get('/registeradmin', [ApotekController::class,'registeradmin']);
 Route::get('/profil', [ApotekController::class,'profil']);
 
+Route::group(['middleware'=>['auth','ceklevel:user']],function ()
+{
+    Route::get('/cart', [ApotekController::class,'cart']);
+});
 Route::group(['middleware'=>['auth','ceklevel:admin']],function ()
 {
 
-Route::get('/dataobat', [ApotekController::class,'dataobat']);
-Route::get('/indexadmin', [ApotekController::class,'indexadmin']);
-Route::get('/tables', [ApotekController::class,'tables']);
-Route::post('/edit-obat', [ApotekController::class,'editobat']);
+    Route::get('/dataobat', [ApotekController::class,'dataobat']);
+    Route::get('/indexadmin', [ApotekController::class,'indexadmin']);
+    Route::get('/tables', [ApotekController::class,'tables']);
+    Route::post('/edit-obat', [ApotekController::class,'editobat']);
 Route::get('/hapus-obat', [ApotekController::class,'hapusobat']);
 Route::post('/tambah-obat', [ApotekController::class,'tambahobat']);
 });
+Route::get('/tes/{name}', [ApotekController::class,'tes']);

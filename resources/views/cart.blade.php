@@ -101,55 +101,34 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr id="tes">
-                    <td class="product-thumbnail">
-                      <img src="asset/product_02.png" alt="Image" class="img-fluid">
-                    </td>
-                    <td class="product-name">
-                      <h2 class="h5 text-black">Ibuprofen</h2>
-                    </td>
-                    <td>$55.00</td>
-                    <td>
-                      <div class="input-group mb-3" style="max-width: 120px;">
-                        <div class="input-group-prepend">
-                          <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
-                        </div>
-                        <input type="text" class="form-control text-center" value="1" placeholder=""
-                          aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
-                        </div>
-                      </div>
-    
-                    </td>
-                    <td>$49.00</td>
-                    <td><a   class="btn btn-primary deletebutton height-auto btn-sm">X</a></td>
-                  </tr>
-    
+                @foreach ($obat as $item)
                   <tr>
                     <td class="product-thumbnail">
-                      <img src="asset/product_01.png" alt="Image" class="img-fluid">
+                      <img src="images/obat/{{$item->image}}" alt="Image" class="img-fluid">
                     </td>
                     <td class="product-name">
-                      <h2 class="h5 text-black">Bioderma</h2>
+                      <h2 class="h5 text-black">{{ $item->nama_obat }}</h2>
                     </td>
-                    <td>$49.00</td>
+                    <td>Rp {{ $item->harga_jual }} </td>
                     <td>
                       <div class="input-group mb-3" style="max-width: 120px;">
                         <div class="input-group-prepend">
                           <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
                         </div>
-                        <input type="text" class="form-control text-center" value="1" placeholder=""
+                        <input type="text" class="form-control text-center" value="{{ $item->jumlah_obat }}" placeholder=""
                           aria-label="Example text with button addon" aria-describedby="button-addon1">
                         <div class="input-group-append">
                           <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
                         </div>
                       </div>
-    
                     </td>
-                    <td>$49.00</td>
+                    @php
+                        $harga = $item->jumlah_obat *  $item->harga_jual;
+                    @endphp
+                    <td>Rp {{ $harga }}.00</td>
                     <td><a href="#" class="btn btn-primary height-auto btn-sm">X</a></td>
                   </tr>
+                @endforeach  
                 </tbody>
               </table>
             </div>
@@ -160,19 +139,15 @@
           <div class="col-md-6">
             <div class="row mb-5">
               <div class="col-md-6 mb-3 mb-md-0">
-                <button class="btn btn-primary btn-md btn-block">Perbarui Keranjang</button>
               </div>
               <div class="col-md-6">
-                <button class="btn btn-outline-primary btn-md btn-block">Lanjut Belanja</button>
               </div>
             </div>
             <div class="row">
            
               <div class="col-md-8 mb-3 mb-md-0">
-                <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
               </div>
               <div class="col-md-4">
-                <button class="btn btn-primary btn-md px-4">Gunakan Kupon</button>
               </div>
             </div>
           </div>
@@ -229,13 +204,7 @@
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript">
-      $('.deletebutton').click(function (){
-       if(confirm('yakin dek?')){
-        $('#tes').hide();
-       }
-      });
-  </script>
+ 
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

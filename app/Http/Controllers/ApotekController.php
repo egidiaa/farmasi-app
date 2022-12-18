@@ -122,7 +122,16 @@ class ApotekController extends Controller
     }
 
     public function cart(){ 
-        return view('cart');
+        $obat =  DB::table('detil_pemesanans as dp')
+        ->select('dp.*','o.*','dp.jumlah_obat')
+        ->join('pemesanans as p', 'p.id', '=', 'dp.id_pemesanan')
+        ->join('obats as o','o.id','=','dp.id_obat')
+        ->where('p.user_id',auth()->user()->id)
+        ->get();
+        // dd($barang);
+        return view('cart',[
+            'obat'=>$obat
+        ]);
     }
 
     public function checkout(){ 
@@ -145,14 +154,12 @@ class ApotekController extends Controller
         }
         $qty = request('qty');
         $id = request('id');
-        
         $keranjang = DB::table('detil_pemesanans as dp')
         ->join('pemesanans as p', 'p.id', '=', 'dp.id_pemesanan')
         ->join('obats as o','o.id','=','dp.id_obat')
         ->where('dp.id_obat',$id)->where('p.user_id',auth()->user()->id)
         ->get();
-        if($keranjang==null){
-            dd($keranjang);
+        if(count($keranjang)!=0){
             $jumlahobat = $keranjang[0]->jumlah_obat + $qty;
             $total_tagihan = $keranjang[0]->total_tagihan + ($qty * $keranjang[0]->harga_jual);
             DB::table('detil_pemesanans as dp')
@@ -181,9 +188,9 @@ class ApotekController extends Controller
         ]);
     }
 
-    public function tes($id)
+    public function tes($name)
     {
-        return $id;
+        return User::where('nama','LIKE','%'.$name.'%')->get();;
     }
     public function shop(){ 
         $obat = Obat::all();
