@@ -27,6 +27,7 @@
                   <li><a href="/indexadmin"style="margin-left: 10px">Dashboard</a></li>
                   @else
                   <li><a href="/dashboarduser"style="margin-left: 10px">Dashboard</a></li>
+                  <li><a href="/profiluser" style="margin-left: 10px">Profil</a></li>
                   @endif
                   <li><a href="/logout"style="margin-left: 10px">Logout</a></li>
                   @else

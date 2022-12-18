@@ -30,6 +30,9 @@ Route::post('/register', [ApotekController::class,'registerpost']);
 Route::any('/logout',[ApotekController::class,'logout']);
 Route::get('/registeradmin', [ApotekController::class,'registeradmin']);
 Route::get('/profil', [ApotekController::class,'profil']);
+Route::get('/profiluser', [ApotekController::class,'profiluser']);
+
+Route::get('/dashboarduser', [ApotekController::class,'dashboarduser']);
 
 Route::group(['middleware'=>['auth','ceklevel:user']],function ()
 {

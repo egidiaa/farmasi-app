@@ -49,39 +49,46 @@
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active"><a href="/index">Beranda</a></li>
+                <li class="active"><a href="/">Beranda</a></li>
                 <li><a href="/shop">Toko</a></li>
-                <li class="has-children">
-                  <a href="/shop">Produk</a>
-                  <ul class="dropdown">
-                    <li><a href="/shop">Suplemen</a></li>
-                    <li class="has-children">
-                      <a href="/shop">Vitamin</a>
-                      <ul class="dropdown">
-                        <li><a href="/shop">Suplemen</a></li>
-                        <li><a href="/shop">Vitamin</a></li>
-                        <li><a href="/shop">Diet &amp; Nutrisi</a></li>
-                        <li><a href="/shop">Teh &amp; Kopi</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="/shop">Diet &amp; Nutrisi</a></li>
-                    <li><a href="/shop">Teh &amp; Kopi</a></li>
-                    
-                  </ul>
-                </li>
                 <li><a href="/about">Tentang Kami</a></li>
                 <li><a href="/contact">Kontak Kami</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    @if (auth()->check())
+                    hi {{ auth()->user()->nama }}
+                    @else
+                    Layanan
+                    @endif
+                  </a>
+                  <ul class="dropdown-menu" >
+                    @if (auth()->check())
+                    @if (auth()->user()->level == 'admin')
+                    <li><a href="/indexadmin"style="margin-left: 10px">Dashboard</a></li>
+                    @else
+                    <li><a href="/dashboarduser"style="margin-left: 10px">Dashboard</a></li>
+                    @endif
+                    <li><a href="/logout"style="margin-left: 10px">Logout</a></li>
+                    @else
+                    <li><a href="/formlogin"style="margin-left: 10px">Login</a></li>
+                    <li><a href="/register"style="margin-left: 10px">Register</a></li>
+                    @endif
+                  </ul>
+                </li>
+            
+          <li id="cart"> 
+              <a href="/cart" class="icons-btn d-inline-block">
+              <span class="icon-menu"><i class="fa-solid fa-cart-shopping"></i></span>
+              </a>
+          </li>
               </ul>
             </nav>
           </div>
           <div class="icons">
-            <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-            <a href="/cart" class="icons-btn d-inline-block bag">
-              <span class="icon-shopping-bag"></span>
-              <span class="number">2</span>
-            </a>
-            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
-                class="icon-menu"></span></a>
+         
+          <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none">
+              <span class="icon-menu"></span>
+          </a>
           </div>
         </div>
       </div>
@@ -428,37 +435,7 @@
         <!-- </form> -->
       </div>
     </div>
-    <footer class="site-footer bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-
-            <div class="block-7">
-              <h3 class="footer-heading mb-4">Tentang Kami <strong class="text-primary"></strong></h3>
-              <p>Solusi Cepat, Mudah, dan Nyaman Untuk Kebutuhan Obat Anda.</p>
-            </div>
-
-          </div>
-          <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
-            <h3 class="footer-heading mb-4">Navigasi</h3>
-            <ul class="list-unstyled">
-              <li><a href="/shop">Suplemen</a></li>
-              <li><a href="/shop">Vitamin</a></li>
-              <li><a href="/shop">Diet &amp; Nutrisi</a></li>
-              <li><a href="/shop">Teh &amp; Kopi</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="block-5 mb-5">
-              <h3 class="footer-heading mb-4">Info Kontak</h3>
-              <ul class="list-unstyled">
-                <li class="address">Surabaya, Indonesia</li>
-                <li class="phone"><a href="tel://081234567890"></a>081234567890</li>
-                <li class="email">nepharmacy@domain.com</li>
-              </ul>
-            </div>
-
+    @include('footer')
 
           </div>
         </div>

@@ -278,4 +278,12 @@ class ApotekController extends Controller
     public function profil(){
         return view('admin.profil');
     }
+
+    public function dashboarduser(){
+        return view('dashboarduser');
+    }
+
+    public function profiluser(){
+        return view('profiluser');
+    }
 }
