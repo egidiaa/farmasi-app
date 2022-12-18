@@ -7,6 +7,7 @@
 jQuery(document).ready(function($) {
 
 	"use strict";
+	
 
 	var slider = function() {
 		$('.nonloop-block-3').owlCarousel({
@@ -146,6 +147,7 @@ jQuery(document).ready(function($) {
 	}; 
 	siteMenuClone();
 
+	$('.btn-save').hide();
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
@@ -155,9 +157,14 @@ jQuery(document).ready(function($) {
 			} else {
 				$(this).closest('.input-group').find('.form-control').val(parseInt(0));
 			}
+			$(this).closest('tr').find('.btn-delete').hide();
+			$(this).closest('tr').find('.btn-save').show();
+				// find('.btn-save').show();
 		});
 		$('.js-btn-plus').on('click', function(e){
 			e.preventDefault();
+			$(this).closest('tr').find('.btn-delete').hide();
+			$(this).closest('tr').find('.btn-save').show();
 			$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) + 1);
 		});
 	};

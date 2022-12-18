@@ -16,7 +16,6 @@ use App\Models\Apoteker;
 */
 
 // Route::get('/', [ApotekController::class,'/']);
-Route::any('/tambah-keranjang', [ApotekController::class,'tambahkeranjang']);
 Route::get('/', [ApotekController::class,'index'])->name('home');
 Route::get('/about', [ApotekController::class,'about']);
 Route::get('/checkout', [ApotekController::class,'checkout']);
@@ -34,6 +33,9 @@ Route::get('/profil', [ApotekController::class,'profil']);
 
 Route::group(['middleware'=>['auth','ceklevel:user']],function ()
 {
+    Route::post('/hapus-keranjang', [ApotekController::class,'hapuskeranjang']);
+    Route::post('/tambah-keranjang', [ApotekController::class,'tambahkeranjang']);
+    Route::post('/ubah-keranjang', [ApotekController::class,'ubahkeranjang']);
     Route::get('/cart', [ApotekController::class,'cart']);
 });
 Route::group(['middleware'=>['auth','ceklevel:admin']],function ()

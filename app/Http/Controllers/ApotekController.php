@@ -128,9 +128,16 @@ class ApotekController extends Controller
         ->join('obats as o','o.id','=','dp.id_obat')
         ->where('p.user_id',auth()->user()->id)
         ->get();
-        // dd($barang);
+        // dd($obat);
+        $total_tagihan = pemesanan::where('user_id',auth()->user()->id)->get();
+        if(count($total_tagihan)==0){
+            $total_tagihan = 0;
+        }else{
+            $total_tagihan = $total_tagihan[0]->total_tagihan;
+        }
         return view('cart',[
-            'obat'=>$obat
+            'obat'=>$obat,
+            'total_tagihan'=> $total_tagihan
         ]);
     }
 
@@ -140,6 +147,35 @@ class ApotekController extends Controller
     
     public function contact(){ 
         return view('contact');
+    }
+    public function hapuskeranjang()
+    {
+        $id = request('id');
+        DB::table('detil_pemesanans as dp')
+        ->join('pemesanans as p', 'p.id', '=', 'dp.id_pemesanan')
+        ->join('obats as o','o.id','=','dp.id_obat')
+        ->where('dp.id_obat',$id)->where('p.user_id',auth()->user()->id)
+        ->delete();
+        return response('Data berhasil dihapus');
+    }
+    public function ubahkeranjang()
+    {
+        $qty = request('qty');
+        $id = request('id');
+        $keranjang = DB::table('detil_pemesanans as dp')
+        ->join('pemesanans as p', 'p.id', '=', 'dp.id_pemesanan')
+        ->join('obats as o','o.id','=','dp.id_obat')
+        ->where('dp.id_obat',$id)->where('p.user_id',auth()->user()->id)
+        ->get();
+        DB::table('detil_pemesanans as dp')
+        ->join('pemesanans as p', 'p.id', '=', 'dp.id_pemesanan')
+        ->join('obats as o','o.id','=','dp.id_obat')
+        ->where('dp.id_obat',$id)->where('p.user_id',auth()->user()->id)
+        ->update([
+            'dp.jumlah_obat'=>$qty,
+            'p.total_tagihan'=>$keranjang[0]->harga_jual* $qty
+    ]);
+        return response('Data berhasil diubah');
     }
     public function tambahkeranjang()
     {

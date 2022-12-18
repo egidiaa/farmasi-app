@@ -8,13 +8,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<meta name="csrf-token" content="{{ csrf_token()}}">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 
   <link rel="stylesheet" href="css/aos.css">
@@ -87,7 +85,7 @@
     <div class="site-section">
       <div class="container">
         <div class="row mb-5">
-          <form class="col-md-12" method="post">
+          <div class="col-md-12" >
             <div class="site-blocks-table">
               <table class="table table-bordered">
                 <thead>
@@ -103,13 +101,14 @@
                 <tbody>
                 @foreach ($obat as $item)
                   <tr>
+                    <input type="hidden" value="{{ $item->id_obat }}">
                     <td class="product-thumbnail">
                       <img src="images/obat/{{$item->image}}" alt="Image" class="img-fluid">
                     </td>
                     <td class="product-name">
                       <h2 class="h5 text-black">{{ $item->nama_obat }}</h2>
                     </td>
-                    <td>Rp {{ $item->harga_jual }} </td>
+                    <td>Rp {{ number_format($item->harga_jual,0,2,'.') }} </td>
                     <td>
                       <div class="input-group mb-3" style="max-width: 120px;">
                         <div class="input-group-prepend">
@@ -125,14 +124,17 @@
                     @php
                         $harga = $item->jumlah_obat *  $item->harga_jual;
                     @endphp
-                    <td>Rp {{ $harga }}.00</td>
-                    <td><a href="#" class="btn btn-primary height-auto btn-sm">X</a></td>
+                    <td>Rp {{  number_format($harga,0,2,'.') }}.00</td>
+                    <td><a onclick="hapus('{{ $item->id_obat }}')"  class="btn  btn-delete btn-primary height-auto btn-sm"><i class="fa-solid fa-trash text-light"></i></a>
+                    <a  class="btn btn-save  btn-primary2 height-auto btn-sm"><i class="fas fa-save text-light"></i></a>
+
+                    </td>
                   </tr>
                 @endforeach  
                 </tbody>
               </table>
             </div>
-          </form>
+          </div>
         </div>
     
         <div class="row">
@@ -161,10 +163,10 @@
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
-                    <span class="text-black">Subtotal</span>
+                    {{-- <span class="text-black">Subtotal</span> --}}
                   </div>
                   <div class="col-md-6 text-right">
-                    <strong class="text-black">$230.00</strong>
+                    {{-- <strong class="text-black">$230.00</strong> --}}
                   </div>
                 </div>
                 <div class="row mb-5">
@@ -172,13 +174,13 @@
                     <span class="text-black">Total</span>
                   </div>
                   <div class="col-md-6 text-right">
-                    <strong class="text-black">$230.00</strong>
+                    <strong class="text-black">Rp {{  number_format($total_tagihan,0,2,'.') }}.00</strong>
                   </div>
                 </div>
     
                 <div class="row">
                   <div class="col-md-12">
-                    <button class="btn btn-primary btn-lg btn-block" onclick="window.location='/checkout'">Proses Checkout</button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="alert('coming soon')">Proses Checkout</button>
                   </div>
                 </div>
               </div>
@@ -214,7 +216,46 @@
 
   <script src="js/main.js"></script>
   <script type="text/javascript">
+  $('.btn-save').click(function (e) { 
+    e.preventDefault();
+   var id_obat = $(this).closest('tr').find('input').val();
+   var jumlah_obat = $(this).closest('tr').find('.form-control').val();
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});  
+          $.ajax({
+            type: "POST",
+            url: "/ubah-keranjang",
+            data: {
+              'id': id_obat ,
+              'qty':jumlah_obat
+            },
+            success: function (response) {
+              alert(response);
+              location.reload(true)
+            }
+          });
+  });
     $('#cart').addClass('active');
+    function hapus(params) {
+    if (!confirm('apakah anda yakin untuk menghapus ?')) {
+    return;
+    }
+      $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});  
+          $.ajax({
+            type: "POST",
+            url: "/hapus-keranjang",
+            data: {
+              'id': params ,
+            },
+            success: function (response) {
+              alert(response);
+              location.reload(true)
+            }
+          });
+    }
     </script>
 </body>
 

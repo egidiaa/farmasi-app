@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --primary2: #064f9e;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #7971ea;
@@ -1997,7 +1998,11 @@ textarea.form-control {
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
-
+.btn-primary2 {
+  background-color: var(--primary2);
+  /* color: #fff; */
+  border-color: var(--primary2);
+}
 .btn-primary {
   color: #fff;
   background-color: #75b239;
